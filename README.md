@@ -192,7 +192,7 @@ docker-compose up -d
 ## 🗓️ Build Roadmap
 
 - [x] **Phase 1** — Ingestion scripts + Airflow DAGs (Yahoo Finance)
-- [ ] **Phase 2** — Bronze → Silver PySpark pipeline on Databricks
+- [x] **Phase 2** — Bronze → Silver PySpark pipeline on Databricks
 - [ ] **Phase 3** — dbt models (staging → marts)
 - [ ] **Phase 4** — Add SEC EDGAR + FRED sources
 - [ ] **Phase 5** — Dashboard (Power BI or Streamlit)
