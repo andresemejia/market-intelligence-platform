@@ -107,7 +107,7 @@ market-intelligence-platform/
 
 ---
 
-## 🔄 Data Pipeline Detail
+## Data Pipeline Detail
 
 ### 1. Ingestion
 - **Yahoo Finance** — Daily OHLCV data for a curated watchlist of tickers (S&P 500 constituents or a subset by sector)
