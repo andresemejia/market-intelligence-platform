@@ -1,10 +1,10 @@
-# 📈 Market Intelligence Data Platform
+# Market Intelligence Data Platform
 
 > An end-to-end data engineering portfolio project — ingesting real financial market data through a medallion lakehouse architecture, modeled with dbt, orchestrated with Airflow, and served via an analytics dashboard.
 
 ---
 
-## 🗺️ Architecture Overview
+## Architecture Overview
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -50,7 +50,7 @@
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Tool |
 |---|---|
@@ -145,7 +145,7 @@ market-intelligence-platform/
 
 ---
 
-## 📊 Dashboard / Serving
+## Dashboard / Serving
 
 **Key views planned:**
 - Price trends with moving average overlays
@@ -156,7 +156,7 @@ market-intelligence-platform/
 
 ---
 
-## ✅ Data Quality Strategy
+## Data Quality Strategy
 
 | Check | Layer | Method |
 |---|---|---|
@@ -169,9 +169,9 @@ market-intelligence-platform/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-> ⚠️ *This section is a work in progress — setup instructions will be added as the project is built.*
+> *This section is a work in progress — setup instructions will be added as the project is built.*
 
 ### Prerequisites
 - Docker + Docker Compose
@@ -189,7 +189,7 @@ docker-compose up -d
 
 ---
 
-## 🗓️ Build Roadmap
+## Build Roadmap
 
 - [x] **Phase 1** — Ingestion scripts + Airflow DAGs (Yahoo Finance)
 - [x] **Phase 2** — Bronze → Silver PySpark pipeline on Databricks
