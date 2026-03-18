@@ -193,7 +193,7 @@ docker-compose up -d
 
 - [x] **Phase 1** — Ingestion scripts + Airflow DAGs (Yahoo Finance)
 - [x] **Phase 2** — Bronze → Silver PySpark pipeline on Databricks
-- [ ] **Phase 3** — dbt models (staging → marts)
+- [x] **Phase 3** — dbt models (staging → marts)
 - [ ] **Phase 4** — Add SEC EDGAR + FRED sources
 - [ ] **Phase 5** — Dashboard (Power BI or Streamlit)
 - [ ] **Phase 6** — Polish: dbt docs, data dictionary, architecture diagram
