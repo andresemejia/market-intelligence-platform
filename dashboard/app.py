@@ -27,48 +27,38 @@ st.set_page_config(
 )
 
 # =============================================================================
-# SECTION 2: DATABASE CONNECTION
-# Connects to your DuckDB file (the Gold layer).
-# @st.cache_resource means the connection is created once and reused —
-# without this, Streamlit would reconnect on every user interaction.
+# SECTION 2: DATA LOADING
+# When running on Streamlit Cloud, reads from CSV exports.
+# When running locally, reads from DuckDB for better performance.
 # =============================================================================
 
+import os
+
+DATA_DIR = "dashboard/data"
 DB_PATH = "data/market_intelligence.duckdb"
 
-@st.cache_resource
-def get_connection():
-    return duckdb.connect(DB_PATH, read_only=True)
-
-conn = get_connection()
-
-# =============================================================================
-# SECTION 3: DATA LOADING FUNCTIONS
-# Each function loads one dbt model into a pandas DataFrame.
-# @st.cache_data means the query result is cached — if the data hasn't
-# changed, Streamlit won't re-query the database on every interaction.
-# =============================================================================
-
 @st.cache_data
-def load_daily_returns():
-    return conn.execute("SELECT * FROM mrt_daily_returns").df()
+def load_data():
+    # Check if DuckDB file exists (local) or use CSVs (cloud)
+    if os.path.exists(DB_PATH):
+        import duckdb
+        conn = duckdb.connect(DB_PATH, read_only=True)
+        daily_returns     = conn.execute("SELECT * FROM mrt_daily_returns").df()
+        moving_averages   = conn.execute("SELECT * FROM mrt_moving_averages").df()
+        sector_performance = conn.execute("SELECT * FROM mrt_sector_performance").df()
+        macro_overlay     = conn.execute("SELECT * FROM mrt_macro_overlay").df()
+        conn.close()
+    else:
+        # Streamlit Cloud — read from CSV exports
+        daily_returns     = pd.read_csv(f"{DATA_DIR}/mrt_daily_returns.csv")
+        moving_averages   = pd.read_csv(f"{DATA_DIR}/mrt_moving_averages.csv")
+        sector_performance = pd.read_csv(f"{DATA_DIR}/mrt_sector_performance.csv")
+        macro_overlay     = pd.read_csv(f"{DATA_DIR}/mrt_macro_overlay.csv")
 
-@st.cache_data
-def load_moving_averages():
-    return conn.execute("SELECT * FROM mrt_moving_averages").df()
+    return daily_returns, moving_averages, sector_performance, macro_overlay
 
-@st.cache_data
-def load_sector_performance():
-    return conn.execute("SELECT * FROM mrt_sector_performance").df()
+df_returns, df_ma, df_sector, df_macro = load_data()
 
-@st.cache_data
-def load_macro_overlay():
-    return conn.execute("SELECT * FROM mrt_macro_overlay").df()
-
-# Load all data
-df_returns     = load_daily_returns()
-df_ma          = load_moving_averages()
-df_sector      = load_sector_performance()
-df_macro       = load_macro_overlay()
 
 # =============================================================================
 # SECTION 4: HEADER
