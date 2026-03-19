@@ -1,2 +1,4 @@
 .env
 data/
+dbt-env/
+!dashboard/data/
