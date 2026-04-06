@@ -1,0 +1,6 @@
+yfinance
+pandas
+fredapi
+python-dotenv
+dbt-core
+dbt-duckdb

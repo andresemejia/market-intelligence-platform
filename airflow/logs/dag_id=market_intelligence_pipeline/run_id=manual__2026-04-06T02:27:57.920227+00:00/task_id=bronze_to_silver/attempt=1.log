@@ -1,0 +1,50 @@
+[2026-04-06T02:28:00.722+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: market_intelligence_pipeline.bronze_to_silver manual__2026-04-06T02:27:57.920227+00:00 [queued]>
+[2026-04-06T02:28:00.726+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: market_intelligence_pipeline.bronze_to_silver manual__2026-04-06T02:27:57.920227+00:00 [queued]>
+[2026-04-06T02:28:00.727+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-04-06T02:28:00.730+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): bronze_to_silver> on 2026-04-06 02:27:57.920227+00:00
+[2026-04-06T02:28:00.732+0000] {standard_task_runner.py:60} INFO - Started process 384 to run task
+[2026-04-06T02:28:00.734+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'market_intelligence_pipeline', 'bronze_to_silver', 'manual__2026-04-06T02:27:57.920227+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/***/dags/market_intelligence_dag.py', '--cfg-path', '/tmp/tmpye9dcu_j']
+[2026-04-06T02:28:00.735+0000] {standard_task_runner.py:88} INFO - Job 84: Subtask bronze_to_silver
+[2026-04-06T02:28:00.752+0000] {task_command.py:423} INFO - Running <TaskInstance: market_intelligence_pipeline.bronze_to_silver manual__2026-04-06T02:27:57.920227+00:00 [running]> on host 2232e66fe841
+[2026-04-06T02:28:00.775+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='andres' AIRFLOW_CTX_DAG_ID='market_intelligence_pipeline' AIRFLOW_CTX_TASK_ID='bronze_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2026-04-06T02:27:57.920227+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-06T02:27:57.920227+00:00'
+[2026-04-06T02:28:00.776+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-04-06T02:28:00.776+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dags && python3 spark/bronze_to_silver.py']
+[2026-04-06T02:28:00.779+0000] {subprocess.py:86} INFO - Output:
+[2026-04-06T02:28:00.946+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,946 | INFO | ============================================================
+[2026-04-06T02:28:00.946+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,946 | INFO | Starting Bronze → Silver transformation
+[2026-04-06T02:28:00.946+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,946 | INFO | Date: 2026-04-06
+[2026-04-06T02:28:00.946+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,946 | INFO | ============================================================
+[2026-04-06T02:28:00.947+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,946 | INFO | Output directories ready.
+[2026-04-06T02:28:00.947+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,946 | INFO | --- Processing Yahoo Finance ---
+[2026-04-06T02:28:00.947+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,946 | INFO | Latest Bronze file found: data/bronze/yahoo_finance/yahoo_prices_2026-03-19.csv
+[2026-04-06T02:28:00.954+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,954 | INFO | Loaded 7028 rows from Bronze.
+[2026-04-06T02:28:00.954+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,954 | INFO | Starting Yahoo Finance Silver transformation. Input rows: 7028
+[2026-04-06T02:28:00.966+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,966 | INFO | Step 1 complete: Date timezone stripped.
+[2026-04-06T02:28:00.968+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:00,968 | INFO | Step 2 complete: Data types enforced.
+[2026-04-06T02:28:01.023+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,023 | INFO | Step 3 complete: No invalid rows found.
+[2026-04-06T02:28:01.024+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,024 | INFO | Step 4 complete: No duplicates found.
+[2026-04-06T02:28:01.024+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,024 | INFO | Yahoo Finance Silver transformation complete.
+[2026-04-06T02:28:01.024+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,024 | INFO | Clean rows: 7028 | Quarantined: 0
+[2026-04-06T02:28:01.062+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,062 | INFO | Clean data saved: data/silver/yahoo_finance/yahoo_finance_silver_2026-04-06.csv (7028 rows)
+[2026-04-06T02:28:01.062+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,062 | INFO | Quarantine data saved: data/quarantine/yahoo_finance_quarantine_2026-04-06.csv (0 rows)
+[2026-04-06T02:28:01.062+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,062 | INFO | --- Processing FRED Macro ---
+[2026-04-06T02:28:01.063+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,063 | INFO | Latest Bronze file found: data/bronze/fred_macro/fred_macro_2026-04-06.csv
+[2026-04-06T02:28:01.064+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,064 | INFO | Loaded 113 rows from Bronze.
+[2026-04-06T02:28:01.064+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,064 | INFO | Starting FRED Silver transformation. Input rows: 113
+[2026-04-06T02:28:01.064+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,064 | INFO | Step 1 complete: Date formatted.
+[2026-04-06T02:28:01.065+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,065 | INFO | Step 2 complete: Data types enforced.
+[2026-04-06T02:28:01.066+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,066 | INFO | Step 3 complete: No invalid rows found.
+[2026-04-06T02:28:01.066+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,066 | INFO | Step 4 complete: No duplicates found.
+[2026-04-06T02:28:01.066+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,066 | INFO | FRED Silver transformation complete.
+[2026-04-06T02:28:01.066+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,066 | INFO | Clean rows: 113 | Quarantined: 0
+[2026-04-06T02:28:01.067+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,067 | INFO | Clean data saved: data/silver/fred_macro/fred_macro_silver_2026-04-06.csv (113 rows)
+[2026-04-06T02:28:01.067+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,067 | INFO | Quarantine data saved: data/quarantine/fred_macro_quarantine_2026-04-06.csv (0 rows)
+[2026-04-06T02:28:01.067+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,067 | INFO | ============================================================
+[2026-04-06T02:28:01.067+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,067 | INFO | Bronze → Silver transformation complete!
+[2026-04-06T02:28:01.067+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,067 | INFO | Yahoo Finance: 7028 clean | 0 quarantined
+[2026-04-06T02:28:01.067+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,067 | INFO | FRED Macro:    113 clean | 0 quarantined
+[2026-04-06T02:28:01.067+0000] {subprocess.py:93} INFO - 2026-04-06 02:28:01,067 | INFO | ============================================================
+[2026-04-06T02:28:01.092+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-04-06T02:28:01.100+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=market_intelligence_pipeline, task_id=bronze_to_silver, execution_date=20260406T022757, start_date=20260406T022800, end_date=20260406T022801
+[2026-04-06T02:28:01.123+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-04-06T02:28:01.132+0000] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

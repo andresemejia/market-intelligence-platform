@@ -1,0 +1,20 @@
+[2026-04-06T02:12:04.216+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: market_intelligence_pipeline.ingest_yahoo_finance manual__2026-04-06T02:12:02.840004+00:00 [queued]>
+[2026-04-06T02:12:04.221+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: market_intelligence_pipeline.ingest_yahoo_finance manual__2026-04-06T02:12:02.840004+00:00 [queued]>
+[2026-04-06T02:12:04.221+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-04-06T02:12:04.229+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): ingest_yahoo_finance> on 2026-04-06 02:12:02.840004+00:00
+[2026-04-06T02:12:04.231+0000] {standard_task_runner.py:60} INFO - Started process 75 to run task
+[2026-04-06T02:12:04.233+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'market_intelligence_pipeline', 'ingest_yahoo_finance', 'manual__2026-04-06T02:12:02.840004+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/***/dags/market_intelligence_dag.py', '--cfg-path', '/tmp/tmph9lo4gdn']
+[2026-04-06T02:12:04.234+0000] {standard_task_runner.py:88} INFO - Job 79: Subtask ingest_yahoo_finance
+[2026-04-06T02:12:04.253+0000] {task_command.py:423} INFO - Running <TaskInstance: market_intelligence_pipeline.ingest_yahoo_finance manual__2026-04-06T02:12:02.840004+00:00 [running]> on host 2232e66fe841
+[2026-04-06T02:12:04.278+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='andres' AIRFLOW_CTX_DAG_ID='market_intelligence_pipeline' AIRFLOW_CTX_TASK_ID='ingest_yahoo_finance' AIRFLOW_CTX_EXECUTION_DATE='2026-04-06T02:12:02.840004+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-06T02:12:02.840004+00:00'
+[2026-04-06T02:12:04.279+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-04-06T02:12:04.279+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "Yahoo Finance data available in Bronze layer" && ls /opt/***/dags/data/bronze/yahoo_finance/']
+[2026-04-06T02:12:04.282+0000] {subprocess.py:86} INFO - Output:
+[2026-04-06T02:12:04.283+0000] {subprocess.py:93} INFO - Yahoo Finance data available in Bronze layer
+[2026-04-06T02:12:04.284+0000] {subprocess.py:93} INFO - yahoo_prices_2026-03-13.csv
+[2026-04-06T02:12:04.284+0000] {subprocess.py:93} INFO - yahoo_prices_2026-03-13.xlsx
+[2026-04-06T02:12:04.284+0000] {subprocess.py:93} INFO - yahoo_prices_2026-03-19.csv
+[2026-04-06T02:12:04.284+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-04-06T02:12:04.292+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=market_intelligence_pipeline, task_id=ingest_yahoo_finance, execution_date=20260406T021202, start_date=20260406T021204, end_date=20260406T021204
+[2026-04-06T02:12:04.329+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-04-06T02:12:04.354+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

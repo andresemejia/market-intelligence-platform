@@ -1,0 +1,28 @@
+[2026-04-05T21:53:57.188+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: market_intelligence_pipeline.ingest_fred_macro manual__2026-04-05T21:53:55.982668+00:00 [queued]>
+[2026-04-05T21:53:57.193+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: market_intelligence_pipeline.ingest_fred_macro manual__2026-04-05T21:53:55.982668+00:00 [queued]>
+[2026-04-05T21:53:57.193+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-04-05T21:53:57.198+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): ingest_fred_macro> on 2026-04-05 21:53:55.982668+00:00
+[2026-04-05T21:53:57.202+0000] {standard_task_runner.py:60} INFO - Started process 75 to run task
+[2026-04-05T21:53:57.203+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'market_intelligence_pipeline', 'ingest_fred_macro', 'manual__2026-04-05T21:53:55.982668+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/***/dags/market_intelligence_dag.py', '--cfg-path', '/tmp/tmprdxqt1y7']
+[2026-04-05T21:53:57.204+0000] {standard_task_runner.py:88} INFO - Job 50: Subtask ingest_fred_macro
+[2026-04-05T21:53:57.222+0000] {task_command.py:423} INFO - Running <TaskInstance: market_intelligence_pipeline.ingest_fred_macro manual__2026-04-05T21:53:55.982668+00:00 [running]> on host 87bd7174fa34
+[2026-04-05T21:53:57.250+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='andres' AIRFLOW_CTX_DAG_ID='market_intelligence_pipeline' AIRFLOW_CTX_TASK_ID='ingest_fred_macro' AIRFLOW_CTX_EXECUTION_DATE='2026-04-05T21:53:55.982668+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-05T21:53:55.982668+00:00'
+[2026-04-05T21:53:57.251+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-04-05T21:53:57.251+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dags && python3 ingestion/fred_macro.py']
+[2026-04-05T21:53:57.255+0000] {subprocess.py:86} INFO - Output:
+[2026-04-05T21:53:57.756+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-04-05T21:53:57.757+0000] {subprocess.py:93} INFO -   File "ingestion/fred_macro.py", line 12, in <module>
+[2026-04-05T21:53:57.759+0000] {subprocess.py:93} INFO -     from fredapi import Fred
+[2026-04-05T21:53:57.759+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'fredapi'
+[2026-04-05T21:53:57.784+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-04-05T21:53:57.790+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-04-05T21:53:57.791+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=market_intelligence_pipeline, task_id=ingest_fred_macro, execution_date=20260405T215355, start_date=20260405T215357, end_date=20260405T215357
+[2026-04-05T21:53:57.795+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 50 for task ingest_fred_macro (Bash command failed. The command returned a non-zero exit code 1.; 75)
+[2026-04-05T21:53:57.837+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-05T21:53:57.846+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

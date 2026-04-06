@@ -1,0 +1,511 @@
+[2026-04-02T00:11:45.888+0000] {processor.py:161} INFO - Started process (PID=677) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:11:45.889+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T00:11:45.891+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:11:45.891+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:11:45.901+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:11:45.916+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:11:45.916+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T00:11:45.927+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:11:45.927+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T00:11:45.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.047 seconds
+[2026-04-02T00:39:22.394+0000] {processor.py:161} INFO - Started process (PID=684) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:39:22.395+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T00:39:22.398+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:39:22.397+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:39:22.411+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:39:22.435+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:39:22.435+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T00:39:22.456+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:39:22.456+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T00:39:22.472+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.082 seconds
+[2026-04-02T00:40:01.955+0000] {processor.py:161} INFO - Started process (PID=691) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:40:01.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T00:40:01.957+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:40:01.957+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:40:01.966+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:40:01.981+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:40:01.981+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T00:40:01.990+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:40:01.990+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T00:40:01.997+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.045 seconds
+[2026-04-02T00:56:00.000+0000] {processor.py:161} INFO - Started process (PID=698) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:56:00.001+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T00:56:00.003+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:56:00.003+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:56:00.011+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T00:56:00.026+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:56:00.026+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T00:56:00.034+0000] {logging_mixin.py:188} INFO - [2026-04-02T00:56:00.034+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T00:56:00.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.043 seconds
+[2026-04-02T01:13:52.387+0000] {processor.py:161} INFO - Started process (PID=705) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T01:13:52.388+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T01:13:52.390+0000] {logging_mixin.py:188} INFO - [2026-04-02T01:13:52.390+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T01:13:52.397+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T01:13:52.410+0000] {logging_mixin.py:188} INFO - [2026-04-02T01:13:52.410+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T01:13:52.420+0000] {logging_mixin.py:188} INFO - [2026-04-02T01:13:52.420+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T01:13:52.426+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.042 seconds
+[2026-04-02T02:14:51.622+0000] {processor.py:161} INFO - Started process (PID=712) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T02:14:51.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T02:14:51.625+0000] {logging_mixin.py:188} INFO - [2026-04-02T02:14:51.625+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T02:14:51.632+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T02:14:51.644+0000] {logging_mixin.py:188} INFO - [2026-04-02T02:14:51.644+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T02:14:51.655+0000] {logging_mixin.py:188} INFO - [2026-04-02T02:14:51.655+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T02:14:51.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.042 seconds
+[2026-04-02T03:04:31.579+0000] {processor.py:161} INFO - Started process (PID=719) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T03:04:31.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T03:04:31.583+0000] {logging_mixin.py:188} INFO - [2026-04-02T03:04:31.583+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T03:04:31.592+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T03:04:31.606+0000] {logging_mixin.py:188} INFO - [2026-04-02T03:04:31.606+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T03:04:31.616+0000] {logging_mixin.py:188} INFO - [2026-04-02T03:04:31.615+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T03:04:31.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.046 seconds
+[2026-04-02T03:34:10.263+0000] {processor.py:161} INFO - Started process (PID=726) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T03:34:10.264+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T03:34:10.266+0000] {logging_mixin.py:188} INFO - [2026-04-02T03:34:10.265+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T03:34:10.275+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T03:34:10.294+0000] {logging_mixin.py:188} INFO - [2026-04-02T03:34:10.294+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T03:34:10.312+0000] {logging_mixin.py:188} INFO - [2026-04-02T03:34:10.312+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T03:34:10.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.065 seconds
+[2026-04-02T04:34:12.102+0000] {processor.py:161} INFO - Started process (PID=733) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T04:34:12.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T04:34:12.106+0000] {logging_mixin.py:188} INFO - [2026-04-02T04:34:12.106+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T04:34:12.123+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T04:34:12.149+0000] {logging_mixin.py:188} INFO - [2026-04-02T04:34:12.149+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T04:34:12.174+0000] {logging_mixin.py:188} INFO - [2026-04-02T04:34:12.174+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T04:34:12.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.093 seconds
+[2026-04-02T06:08:32.538+0000] {processor.py:161} INFO - Started process (PID=740) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T06:08:32.538+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T06:08:32.540+0000] {logging_mixin.py:188} INFO - [2026-04-02T06:08:32.540+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T06:08:32.549+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T06:08:32.571+0000] {logging_mixin.py:188} INFO - [2026-04-02T06:08:32.571+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T06:08:32.591+0000] {logging_mixin.py:188} INFO - [2026-04-02T06:08:32.591+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T06:08:32.605+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.069 seconds
+[2026-04-02T07:50:05.801+0000] {processor.py:161} INFO - Started process (PID=747) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T07:50:05.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T07:50:05.803+0000] {logging_mixin.py:188} INFO - [2026-04-02T07:50:05.803+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T07:50:05.810+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T07:50:05.822+0000] {logging_mixin.py:188} INFO - [2026-04-02T07:50:05.822+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T07:50:05.831+0000] {logging_mixin.py:188} INFO - [2026-04-02T07:50:05.831+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T07:50:05.837+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.037 seconds
+[2026-04-02T09:11:22.500+0000] {processor.py:161} INFO - Started process (PID=754) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T09:11:22.501+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T09:11:22.502+0000] {logging_mixin.py:188} INFO - [2026-04-02T09:11:22.502+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T09:11:22.511+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T09:11:22.524+0000] {logging_mixin.py:188} INFO - [2026-04-02T09:11:22.524+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T09:11:22.533+0000] {logging_mixin.py:188} INFO - [2026-04-02T09:11:22.533+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T09:11:22.539+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.042 seconds
+[2026-04-02T10:47:45.656+0000] {processor.py:161} INFO - Started process (PID=761) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T10:47:45.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T10:47:45.659+0000] {logging_mixin.py:188} INFO - [2026-04-02T10:47:45.658+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T10:47:45.668+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T10:47:45.679+0000] {logging_mixin.py:188} INFO - [2026-04-02T10:47:45.679+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T10:47:45.689+0000] {logging_mixin.py:188} INFO - [2026-04-02T10:47:45.689+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T10:47:45.695+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.041 seconds
+[2026-04-02T12:03:56.158+0000] {processor.py:161} INFO - Started process (PID=768) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T12:03:56.159+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T12:03:56.161+0000] {logging_mixin.py:188} INFO - [2026-04-02T12:03:56.161+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T12:03:56.169+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T12:03:56.184+0000] {logging_mixin.py:188} INFO - [2026-04-02T12:03:56.184+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T12:03:56.192+0000] {logging_mixin.py:188} INFO - [2026-04-02T12:03:56.192+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T12:03:56.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.043 seconds
+[2026-04-02T13:11:52.830+0000] {processor.py:161} INFO - Started process (PID=775) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:11:52.831+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:11:52.832+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:11:52.832+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:11:52.838+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:11:52.851+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:11:52.851+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:11:52.859+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:11:52.859+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:11:52.865+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.037 seconds
+[2026-04-02T13:28:48.197+0000] {processor.py:161} INFO - Started process (PID=782) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:28:48.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:28:48.199+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:28:48.199+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:28:48.206+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:28:48.217+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:28:48.217+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:28:48.226+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:28:48.226+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:28:48.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.037 seconds
+[2026-04-02T13:34:20.337+0000] {processor.py:161} INFO - Started process (PID=789) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:34:20.338+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:34:20.340+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:34:20.340+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:34:20.350+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:34:20.371+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:34:20.370+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:34:20.388+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:34:20.388+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:34:20.402+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.067 seconds
+[2026-04-02T13:45:26.528+0000] {processor.py:161} INFO - Started process (PID=796) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:45:26.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:45:26.530+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:45:26.530+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:45:26.538+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:45:26.553+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:45:26.553+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:45:26.562+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:45:26.562+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:45:26.568+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.042 seconds
+[2026-04-02T13:47:51.092+0000] {processor.py:161} INFO - Started process (PID=803) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:47:51.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:47:51.095+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:47:51.095+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:47:51.105+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:47:51.122+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:47:51.122+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:47:51.133+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:47:51.133+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:47:51.139+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.050 seconds
+[2026-04-02T13:48:44.165+0000] {processor.py:161} INFO - Started process (PID=810) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:48:44.166+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:48:44.168+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:48:44.168+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:48:44.177+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:48:44.192+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:48:44.192+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:48:44.201+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:48:44.200+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:48:44.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.044 seconds
+[2026-04-02T13:50:23.579+0000] {processor.py:161} INFO - Started process (PID=817) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:50:23.580+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:50:23.581+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:50:23.581+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:50:23.591+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:50:23.607+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:50:23.607+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:50:23.617+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:50:23.617+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:50:23.624+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.048 seconds
+[2026-04-02T13:51:48.405+0000] {processor.py:161} INFO - Started process (PID=824) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:51:48.406+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:51:48.408+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:51:48.408+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:51:48.417+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:51:48.435+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:51:48.435+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:51:48.446+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:51:48.446+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:51:48.452+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.051 seconds
+[2026-04-02T13:53:15.109+0000] {processor.py:161} INFO - Started process (PID=831) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:53:15.109+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:53:15.114+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:53:15.114+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:53:15.124+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:53:15.141+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:53:15.141+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:53:15.152+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:53:15.152+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:53:15.158+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.052 seconds
+[2026-04-02T13:53:45.364+0000] {processor.py:161} INFO - Started process (PID=838) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:53:45.365+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:53:45.367+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:53:45.366+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:53:45.377+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:53:45.394+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:53:45.394+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:53:45.404+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:53:45.404+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:53:45.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.052 seconds
+[2026-04-02T13:54:15.640+0000] {processor.py:161} INFO - Started process (PID=845) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:54:15.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:54:15.644+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:54:15.644+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:54:15.657+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:54:15.676+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:54:15.676+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:54:15.687+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:54:15.687+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:54:15.693+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.058 seconds
+[2026-04-02T13:54:45.866+0000] {processor.py:161} INFO - Started process (PID=852) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:54:45.869+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:54:45.873+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:54:45.872+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:54:45.882+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:54:45.905+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:54:45.905+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:54:45.917+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:54:45.917+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:54:45.927+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.064 seconds
+[2026-04-02T13:55:16.130+0000] {processor.py:161} INFO - Started process (PID=859) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:55:16.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:55:16.136+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:55:16.136+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:55:16.151+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:55:16.175+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:55:16.175+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:55:16.188+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:55:16.188+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:55:16.197+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.070 seconds
+[2026-04-02T13:55:46.464+0000] {processor.py:161} INFO - Started process (PID=866) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:55:46.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:55:46.470+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:55:46.470+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:55:46.492+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:55:46.519+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:55:46.519+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:55:46.530+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:55:46.530+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:55:46.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.086 seconds
+[2026-04-02T13:56:16.750+0000] {processor.py:161} INFO - Started process (PID=873) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:56:16.752+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:56:16.755+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:56:16.755+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:56:16.768+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:56:16.789+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:56:16.788+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:56:16.804+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:56:16.803+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:56:16.810+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.064 seconds
+[2026-04-02T13:56:47.053+0000] {processor.py:161} INFO - Started process (PID=880) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:56:47.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:56:47.060+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:56:47.059+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:56:47.091+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:56:47.110+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:56:47.109+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:56:47.119+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:56:47.119+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:56:47.125+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.078 seconds
+[2026-04-02T13:57:17.341+0000] {processor.py:161} INFO - Started process (PID=887) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:57:17.342+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:57:17.349+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:57:17.349+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:57:17.366+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:57:17.391+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:57:17.391+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:57:17.407+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:57:17.407+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:57:17.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.079 seconds
+[2026-04-02T13:57:47.618+0000] {processor.py:161} INFO - Started process (PID=894) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:57:47.619+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:57:47.621+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:57:47.621+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:57:47.632+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:57:47.664+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:57:47.664+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:57:47.679+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:57:47.679+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:57:47.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.072 seconds
+[2026-04-02T13:58:17.954+0000] {processor.py:161} INFO - Started process (PID=901) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:58:17.955+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:58:17.958+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:58:17.957+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:58:17.967+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:58:17.982+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:58:17.982+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:58:17.997+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:58:17.997+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:58:18.004+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.058 seconds
+[2026-04-02T13:58:48.221+0000] {processor.py:161} INFO - Started process (PID=908) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:58:48.223+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:58:48.226+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:58:48.225+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:58:48.237+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:58:48.255+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:58:48.255+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:58:48.266+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:58:48.266+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:58:48.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.055 seconds
+[2026-04-02T13:59:18.497+0000] {processor.py:161} INFO - Started process (PID=915) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:59:18.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:59:18.502+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:59:18.501+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:59:18.516+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:59:18.535+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:59:18.535+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:59:18.548+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:59:18.548+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:59:18.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.064 seconds
+[2026-04-02T13:59:48.757+0000] {processor.py:161} INFO - Started process (PID=922) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:59:48.759+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T13:59:48.761+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:59:48.761+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:59:48.776+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T13:59:48.790+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:59:48.790+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T13:59:48.800+0000] {logging_mixin.py:188} INFO - [2026-04-02T13:59:48.800+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T13:59:48.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.054 seconds
+[2026-04-02T14:00:19.043+0000] {processor.py:161} INFO - Started process (PID=929) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:00:19.045+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:00:19.048+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:00:19.048+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:00:19.064+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:00:19.085+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:00:19.085+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:00:19.097+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:00:19.097+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:00:19.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.066 seconds
+[2026-04-02T14:00:49.366+0000] {processor.py:161} INFO - Started process (PID=936) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:00:49.367+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:00:49.370+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:00:49.370+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:00:49.384+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:00:49.402+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:00:49.402+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:00:49.414+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:00:49.414+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:00:49.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.059 seconds
+[2026-04-02T14:01:19.651+0000] {processor.py:161} INFO - Started process (PID=943) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:01:19.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:01:19.657+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:01:19.657+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:01:19.673+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:01:19.695+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:01:19.695+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:01:19.705+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:01:19.705+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:01:19.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.065 seconds
+[2026-04-02T14:01:49.933+0000] {processor.py:161} INFO - Started process (PID=950) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:01:49.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:01:49.940+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:01:49.940+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:01:49.952+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:01:49.971+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:01:49.971+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:01:49.984+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:01:49.984+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:01:49.990+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.062 seconds
+[2026-04-02T14:02:20.192+0000] {processor.py:161} INFO - Started process (PID=957) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:02:20.193+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:02:20.196+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:02:20.195+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:02:20.207+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:02:20.225+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:02:20.225+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:02:20.237+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:02:20.237+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:02:20.244+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.056 seconds
+[2026-04-02T14:02:50.493+0000] {processor.py:161} INFO - Started process (PID=964) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:02:50.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:02:50.498+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:02:50.498+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:02:50.516+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:02:50.539+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:02:50.539+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:02:50.550+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:02:50.550+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:02:50.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.068 seconds
+[2026-04-02T14:03:20.786+0000] {processor.py:161} INFO - Started process (PID=971) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:03:20.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:03:20.790+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:03:20.790+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:03:20.806+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:03:20.830+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:03:20.830+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:03:20.841+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:03:20.841+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:03:20.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.067 seconds
+[2026-04-02T14:03:51.075+0000] {processor.py:161} INFO - Started process (PID=978) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:03:51.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:03:51.081+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:03:51.080+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:03:51.098+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:03:51.122+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:03:51.122+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:03:51.134+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:03:51.134+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:03:51.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.073 seconds
+[2026-04-02T14:04:21.346+0000] {processor.py:161} INFO - Started process (PID=985) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:04:21.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:04:21.356+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:04:21.355+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:04:21.382+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:04:21.411+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:04:21.411+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:04:21.426+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:04:21.426+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:04:21.434+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.095 seconds
+[2026-04-02T14:04:51.699+0000] {processor.py:161} INFO - Started process (PID=992) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:04:51.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:04:51.705+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:04:51.704+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:04:51.723+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:04:51.749+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:04:51.749+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:04:51.761+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:04:51.761+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:04:51.769+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.075 seconds
+[2026-04-02T14:05:21.985+0000] {processor.py:161} INFO - Started process (PID=999) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:05:21.986+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:05:21.988+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:05:21.988+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:05:21.998+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:05:22.016+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:05:22.016+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:05:22.028+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:05:22.028+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:05:22.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.053 seconds
+[2026-04-02T14:05:52.352+0000] {processor.py:161} INFO - Started process (PID=1006) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:05:52.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:05:52.356+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:05:52.356+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:05:52.367+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:05:52.387+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:05:52.387+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:05:52.401+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:05:52.401+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:05:52.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.070 seconds
+[2026-04-02T14:06:22.619+0000] {processor.py:161} INFO - Started process (PID=1013) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:06:22.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:06:22.625+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:06:22.625+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:06:22.642+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:06:22.663+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:06:22.663+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:06:22.673+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:06:22.673+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:06:22.680+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.066 seconds
+[2026-04-02T14:06:52.952+0000] {processor.py:161} INFO - Started process (PID=1020) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:06:52.955+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:06:52.960+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:06:52.959+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:06:52.991+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:06:53.010+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:06:53.010+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:06:53.023+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:06:53.023+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:06:53.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.086 seconds
+[2026-04-02T14:07:23.318+0000] {processor.py:161} INFO - Started process (PID=1027) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:07:23.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:07:23.322+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:07:23.322+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:07:23.334+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:07:23.358+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:07:23.358+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:07:23.371+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:07:23.371+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:07:23.378+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.083 seconds
+[2026-04-02T14:07:53.630+0000] {processor.py:161} INFO - Started process (PID=1034) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:07:53.633+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:07:53.637+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:07:53.637+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:07:53.656+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:07:53.682+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:07:53.682+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:07:53.693+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:07:53.693+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:07:53.700+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.077 seconds
+[2026-04-02T14:08:23.948+0000] {processor.py:161} INFO - Started process (PID=1041) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:08:23.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:08:23.953+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:08:23.953+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:08:23.973+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:08:23.994+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:08:23.994+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:08:24.006+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:08:24.006+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:08:24.012+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.069 seconds
+[2026-04-02T14:08:54.217+0000] {processor.py:161} INFO - Started process (PID=1048) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:08:54.219+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:08:54.222+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:08:54.222+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:08:54.239+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:08:54.262+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:08:54.262+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:08:54.273+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:08:54.273+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:08:54.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.068 seconds
+[2026-04-02T14:09:24.501+0000] {processor.py:161} INFO - Started process (PID=1055) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:09:24.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:09:24.506+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:09:24.506+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:09:24.518+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:09:24.537+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:09:24.537+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:09:24.548+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:09:24.548+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:09:24.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.058 seconds
+[2026-04-02T14:09:54.790+0000] {processor.py:161} INFO - Started process (PID=1062) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:09:54.793+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:09:54.796+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:09:54.796+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:09:54.816+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:09:54.840+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:09:54.840+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:09:54.853+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:09:54.852+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:09:54.862+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.079 seconds
+[2026-04-02T14:10:25.152+0000] {processor.py:161} INFO - Started process (PID=1069) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:10:25.154+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:10:25.158+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:10:25.158+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:10:25.176+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:10:25.200+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:10:25.200+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:10:25.213+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:10:25.213+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:10:25.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.078 seconds
+[2026-04-02T14:10:55.489+0000] {processor.py:161} INFO - Started process (PID=1076) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:10:55.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:10:55.494+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:10:55.494+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:10:55.520+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:10:55.547+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:10:55.547+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:10:55.561+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:10:55.561+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:10:55.567+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.084 seconds
+[2026-04-02T14:11:54.823+0000] {processor.py:161} INFO - Started process (PID=42) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:11:54.828+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:11:54.831+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:11:54.831+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:11:54.854+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:11:55.061+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:11:55.060+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:11:55.085+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:11:55.085+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:11:55.119+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.298 seconds
+[2026-04-02T14:12:25.412+0000] {processor.py:161} INFO - Started process (PID=49) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:12:25.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:12:25.417+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:12:25.417+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:12:25.432+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:12:25.453+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:12:25.453+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:12:25.463+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:12:25.463+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:12:25.472+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.065 seconds
+[2026-04-02T14:12:55.678+0000] {processor.py:161} INFO - Started process (PID=56) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:12:55.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:12:55.681+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:12:55.681+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:12:55.690+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:12:55.708+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:12:55.708+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:12:55.720+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:12:55.720+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:12:55.729+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.053 seconds
+[2026-04-02T14:13:25.939+0000] {processor.py:161} INFO - Started process (PID=63) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:13:25.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:13:25.943+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:13:25.943+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:13:25.987+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:13:26.029+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:13:26.029+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:13:26.060+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:13:26.060+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:13:26.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.147 seconds
+[2026-04-02T14:13:56.187+0000] {processor.py:161} INFO - Started process (PID=70) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:13:56.188+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:13:56.192+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:13:56.192+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:13:56.204+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:13:56.227+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:13:56.227+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:13:56.239+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:13:56.239+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:13:56.247+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.062 seconds
+[2026-04-02T14:14:26.479+0000] {processor.py:161} INFO - Started process (PID=77) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:14:26.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:14:26.484+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:14:26.484+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:14:26.505+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:14:26.524+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:14:26.523+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:14:26.537+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:14:26.537+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:14:26.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.074 seconds
+[2026-04-02T14:14:56.765+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:14:56.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:14:56.770+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:14:56.770+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:14:56.786+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:14:56.804+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:14:56.804+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:14:56.814+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:14:56.814+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:14:56.821+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.060 seconds
+[2026-04-02T14:15:27.063+0000] {processor.py:161} INFO - Started process (PID=91) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:15:27.064+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:15:27.066+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:15:27.066+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:15:27.076+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:15:27.095+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:15:27.094+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:15:27.105+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:15:27.105+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:15:27.112+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.052 seconds
+[2026-04-02T14:15:57.327+0000] {processor.py:161} INFO - Started process (PID=103) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:15:57.329+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:15:57.331+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:15:57.331+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:15:57.343+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:15:57.363+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:15:57.363+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:15:57.377+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:15:57.377+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:15:57.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.065 seconds
+[2026-04-02T14:16:27.595+0000] {processor.py:161} INFO - Started process (PID=110) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:16:27.596+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:16:27.601+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:16:27.601+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:16:27.614+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:16:27.632+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:16:27.631+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:16:27.641+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:16:27.641+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:16:27.648+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.058 seconds
+[2026-04-02T14:16:57.875+0000] {processor.py:161} INFO - Started process (PID=117) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:16:57.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:16:57.882+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:16:57.881+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:16:57.897+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:16:57.919+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:16:57.919+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:16:57.930+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:16:57.930+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:16:57.937+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.067 seconds
+[2026-04-02T14:17:28.105+0000] {processor.py:161} INFO - Started process (PID=124) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:17:28.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:17:28.109+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:17:28.108+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:17:28.119+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:17:28.136+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:17:28.136+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:17:28.147+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:17:28.147+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:17:28.154+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.052 seconds
+[2026-04-02T14:17:58.440+0000] {processor.py:161} INFO - Started process (PID=131) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:17:58.441+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:17:58.443+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:17:58.443+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:17:58.453+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:17:58.469+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:17:58.469+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:17:58.479+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:17:58.479+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:17:58.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.049 seconds
+[2026-04-02T14:18:28.735+0000] {processor.py:161} INFO - Started process (PID=138) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:18:28.736+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:18:28.740+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:18:28.740+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:18:28.755+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:18:28.776+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:18:28.776+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:18:28.786+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:18:28.786+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:18:28.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.063 seconds
+[2026-04-02T14:18:53.577+0000] {processor.py:161} INFO - Started process (PID=42) to work on /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:18:53.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/market_intelligence_dag.py for tasks to queue
+[2026-04-02T14:18:53.584+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:18:53.584+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:18:53.603+0000] {processor.py:840} INFO - DAG(s) 'market_intelligence_pipeline' retrieved from /opt/airflow/dags/market_intelligence_dag.py
+[2026-04-02T14:18:53.707+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:18:53.707+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2026-04-02T14:18:53.719+0000] {logging_mixin.py:188} INFO - [2026-04-02T14:18:53.719+0000] {dag.py:3820} INFO - Setting next_dagrun for market_intelligence_pipeline to 2026-04-01T18:00:00+00:00, run_after=2026-04-02T18:00:00+00:00
+[2026-04-02T14:18:53.728+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/market_intelligence_dag.py took 0.152 seconds

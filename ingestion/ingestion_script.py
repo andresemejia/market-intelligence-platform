@@ -87,7 +87,12 @@ def fetch_stock_data(tickers: list, period: str) -> pd.DataFrame:
 
         try:
             # yf.Ticker() creates a ticker object. .history() pulls the data
-            stock = yf.Ticker(ticker)
+            import requests
+            session = requests.Session()
+            session.headers.update({
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            })
+            stock = yf.Ticker(ticker, session=session)
             df = stock.history(period=period)
 
             # If nothing came back (e.g. invalid ticker), skip it

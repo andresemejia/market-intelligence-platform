@@ -1,0 +1,52 @@
+[2026-04-06T01:38:32.961+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: market_intelligence_pipeline.ingest_fred_macro manual__2026-04-06T01:38:32.172266+00:00 [queued]>
+[2026-04-06T01:38:32.966+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: market_intelligence_pipeline.ingest_fred_macro manual__2026-04-06T01:38:32.172266+00:00 [queued]>
+[2026-04-06T01:38:32.966+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-04-06T01:38:32.973+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): ingest_fred_macro> on 2026-04-06 01:38:32.172266+00:00
+[2026-04-06T01:38:32.975+0000] {standard_task_runner.py:60} INFO - Started process 75 to run task
+[2026-04-06T01:38:32.977+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'market_intelligence_pipeline', 'ingest_fred_macro', 'manual__2026-04-06T01:38:32.172266+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/***/dags/market_intelligence_dag.py', '--cfg-path', '/tmp/tmp54zn5mp6']
+[2026-04-06T01:38:32.977+0000] {standard_task_runner.py:88} INFO - Job 68: Subtask ingest_fred_macro
+[2026-04-06T01:38:33.000+0000] {task_command.py:423} INFO - Running <TaskInstance: market_intelligence_pipeline.ingest_fred_macro manual__2026-04-06T01:38:32.172266+00:00 [running]> on host 47176eb25785
+[2026-04-06T01:38:33.026+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='andres' AIRFLOW_CTX_DAG_ID='market_intelligence_pipeline' AIRFLOW_CTX_TASK_ID='ingest_fred_macro' AIRFLOW_CTX_EXECUTION_DATE='2026-04-06T01:38:32.172266+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-06T01:38:32.172266+00:00'
+[2026-04-06T01:38:33.027+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-04-06T01:38:33.027+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dags && python3 ingestion/fred_macro.py']
+[2026-04-06T01:38:33.034+0000] {subprocess.py:86} INFO - Output:
+[2026-04-06T01:38:33.634+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:33,634 | INFO | ============================================================
+[2026-04-06T01:38:33.634+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:33,634 | INFO | Starting FRED macro ingestion
+[2026-04-06T01:38:33.634+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:33,634 | INFO | Indicators: ['FEDFUNDS', 'CPIAUCSL', 'GS10', 'UNRATE', 'GDP']
+[2026-04-06T01:38:33.635+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:33,634 | INFO | Date range: 2024-01-01 to 2026-04-06
+[2026-04-06T01:38:33.635+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:33,634 | INFO | ============================================================
+[2026-04-06T01:38:33.635+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:33,634 | INFO | Output directory ready: data/bronze/fred_macro
+[2026-04-06T01:38:33.635+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:33,634 | INFO | Fetching FEDFUNDS (federal_funds_rate)...
+[2026-04-06T01:38:33.946+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:33,946 | INFO |   -> 27 rows fetched for FEDFUNDS
+[2026-04-06T01:38:33.946+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:33,946 | INFO | Fetching CPIAUCSL (consumer_price_index)...
+[2026-04-06T01:38:34.135+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,135 | WARNING |   -> 1 null values dropped for CPIAUCSL
+[2026-04-06T01:38:34.137+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,137 | INFO |   -> 25 rows fetched for CPIAUCSL
+[2026-04-06T01:38:34.137+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,137 | INFO | Fetching GS10 (treasury_yield_10y)...
+[2026-04-06T01:38:34.395+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,394 | INFO |   -> 27 rows fetched for GS10
+[2026-04-06T01:38:34.395+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,395 | INFO | Fetching UNRATE (unemployment_rate)...
+[2026-04-06T01:38:34.622+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,622 | WARNING |   -> 1 null values dropped for UNRATE
+[2026-04-06T01:38:34.624+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,623 | INFO |   -> 26 rows fetched for UNRATE
+[2026-04-06T01:38:34.624+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,624 | INFO | Fetching GDP (gross_domestic_product)...
+[2026-04-06T01:38:34.944+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,943 | INFO |   -> 8 rows fetched for GDP
+[2026-04-06T01:38:34.945+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,944 | INFO | Total rows fetched: 113
+[2026-04-06T01:38:34.945+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,945 | INFO | Running data quality checks...
+[2026-04-06T01:38:34.949+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,949 | INFO | Summary by indicator:
+[2026-04-06T01:38:34.949+0000] {subprocess.py:93} INFO -            count        min        max
+[2026-04-06T01:38:34.949+0000] {subprocess.py:93} INFO - series_id
+[2026-04-06T01:38:34.949+0000] {subprocess.py:93} INFO - CPIAUCSL      25    309.698    327.460
+[2026-04-06T01:38:34.950+0000] {subprocess.py:93} INFO - FEDFUNDS      27      3.640      5.330
+[2026-04-06T01:38:34.950+0000] {subprocess.py:93} INFO - GDP            8  28708.161  31442.483
+[2026-04-06T01:38:34.950+0000] {subprocess.py:93} INFO - GS10          27      3.720      4.630
+[2026-04-06T01:38:34.950+0000] {subprocess.py:93} INFO - UNRATE        26      3.700      4.500
+[2026-04-06T01:38:34.950+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,949 | INFO | Quality checks passed. Shape: (113, 6)
+[2026-04-06T01:38:34.953+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,953 | INFO | Data saved to: data/bronze/fred_macro/fred_macro_2026-04-06.csv
+[2026-04-06T01:38:34.953+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,953 | INFO | ============================================================
+[2026-04-06T01:38:34.953+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,953 | INFO | Ingestion complete!
+[2026-04-06T01:38:34.953+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,953 | INFO | File: data/bronze/fred_macro/fred_macro_2026-04-06.csv
+[2026-04-06T01:38:34.954+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,953 | INFO | Rows: 113
+[2026-04-06T01:38:34.954+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,953 | INFO | Indicators: 5 series
+[2026-04-06T01:38:34.954+0000] {subprocess.py:93} INFO - 2026-04-06 01:38:34,953 | INFO | ============================================================
+[2026-04-06T01:38:34.988+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-04-06T01:38:34.997+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=market_intelligence_pipeline, task_id=ingest_fred_macro, execution_date=20260406T013832, start_date=20260406T013832, end_date=20260406T013834
+[2026-04-06T01:38:35.021+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-04-06T01:38:35.030+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

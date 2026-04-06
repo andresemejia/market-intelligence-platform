@@ -1,0 +1,25 @@
+[2026-04-03T23:32:20.056+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: market_intelligence_pipeline.ingest_yahoo_finance manual__2026-04-03T23:32:19.474801+00:00 [queued]>
+[2026-04-03T23:32:20.060+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: market_intelligence_pipeline.ingest_yahoo_finance manual__2026-04-03T23:32:19.474801+00:00 [queued]>
+[2026-04-03T23:32:20.060+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2026-04-03T23:32:20.068+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): ingest_yahoo_finance> on 2026-04-03 23:32:19.474801+00:00
+[2026-04-03T23:32:20.069+0000] {standard_task_runner.py:60} INFO - Started process 489 to run task
+[2026-04-03T23:32:20.071+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'market_intelligence_pipeline', 'ingest_yahoo_finance', 'manual__2026-04-03T23:32:19.474801+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/market_intelligence_dag.py', '--cfg-path', '/tmp/tmpmk6ufa_q']
+[2026-04-03T23:32:20.072+0000] {standard_task_runner.py:88} INFO - Job 29: Subtask ingest_yahoo_finance
+[2026-04-03T23:32:20.088+0000] {task_command.py:423} INFO - Running <TaskInstance: market_intelligence_pipeline.ingest_yahoo_finance manual__2026-04-03T23:32:19.474801+00:00 [running]> on host 3756d92898d0
+[2026-04-03T23:32:20.113+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='andres' AIRFLOW_CTX_DAG_ID='market_intelligence_pipeline' AIRFLOW_CTX_TASK_ID='ingest_yahoo_finance' AIRFLOW_CTX_EXECUTION_DATE='2026-04-03T23:32:19.474801+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-03T23:32:19.474801+00:00'
+[2026-04-03T23:32:20.114+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-04-03T23:32:20.114+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/*** && python3 ingestion/ingestion_script.py']
+[2026-04-03T23:32:20.117+0000] {subprocess.py:86} INFO - Output:
+[2026-04-03T23:32:20.126+0000] {subprocess.py:93} INFO - python3: can't open file 'ingestion/ingestion_script.py': [Errno 2] No such file or directory
+[2026-04-03T23:32:20.127+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2026-04-03T23:32:20.131+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2026-04-03T23:32:20.133+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=market_intelligence_pipeline, task_id=ingest_yahoo_finance, execution_date=20260403T233219, start_date=20260403T233220, end_date=20260403T233220
+[2026-04-03T23:32:20.138+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 29 for task ingest_yahoo_finance (Bash command failed. The command returned a non-zero exit code 2.; 489)
+[2026-04-03T23:32:20.170+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-03T23:32:20.185+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

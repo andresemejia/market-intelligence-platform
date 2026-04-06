@@ -3462,3 +3462,798 @@ KeyboardInterrupt
 [0m19:16:34.412151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10986c0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098cc0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109863d90>]}
 [0m19:16:34.413369 [debug] [MainThread]: Flushing usage events
 [0m19:16:36.656408 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:14:41.884299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a387550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4123d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a412a50>]}
+
+
+============================== 10:14:41.886974 | 9a75fe0a-ff51-4e89-85df-4fcffb0bb3af ==============================
+[0m10:14:41.886974 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:14:41.887258 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_path': '/Users/andresmejia/Documents/market-intelligence-platform/dbt/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'empty': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'profiles_dir': '/Users/andresmejia/.dbt', 'static_parser': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'target_path': 'None', 'partial_parse': 'True', 'write_json': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'version_check': 'True', 'warn_error': 'None'}
+[0m10:14:42.022091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a46a510>]}
+[0m10:14:42.041683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10954be10>]}
+[0m10:14:42.042820 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m10:14:42.088428 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m10:14:42.124220 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:14:42.124385 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:14:42.124484 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:14:42.126598 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.market_intelligence.intermediate
+[0m10:14:42.134162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a925390>]}
+[0m10:14:42.155446 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/andresmejia/Documents/market-intelligence-platform/dbt/target/manifest.json
+[0m10:14:42.156617 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/andresmejia/Documents/market-intelligence-platform/dbt/target/semantic_manifest.json
+[0m10:14:42.166010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a8e4790>]}
+[0m10:14:42.166212 [info ] [MainThread]: Found 6 models, 474 macros
+[0m10:14:42.166351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a682ed0>]}
+[0m10:14:42.167049 [info ] [MainThread]: 
+[0m10:14:42.167181 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:14:42.167284 [info ] [MainThread]: 
+[0m10:14:42.167483 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:14:42.169272 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_market_intelligence'
+[0m10:14:42.213491 [debug] [ThreadPool]: Using duckdb connection "list_market_intelligence"
+[0m10:14:42.213676 [debug] [ThreadPool]: On list_market_intelligence: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "connection_name": "list_market_intelligence"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"market_intelligence"'
+    
+  
+  
+[0m10:14:42.213784 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:14:42.226504 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m10:14:42.226968 [debug] [ThreadPool]: On list_market_intelligence: Close
+[0m10:14:42.227228 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_market_intelligence, now create_market_intelligence_main)
+[0m10:14:42.227428 [debug] [ThreadPool]: Creating schema "database: "market_intelligence"
+schema: "main"
+"
+[0m10:14:42.229714 [debug] [ThreadPool]: Using duckdb connection "create_market_intelligence_main"
+[0m10:14:42.229834 [debug] [ThreadPool]: On create_market_intelligence_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "connection_name": "create_market_intelligence_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='market_intelligence'
+        and type='sqlite'
+    
+  
+[0m10:14:42.229930 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:14:42.230407 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:14:42.230865 [debug] [ThreadPool]: Using duckdb connection "create_market_intelligence_main"
+[0m10:14:42.230970 [debug] [ThreadPool]: On create_market_intelligence_main: BEGIN
+[0m10:14:42.231121 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:14:42.231223 [debug] [ThreadPool]: Using duckdb connection "create_market_intelligence_main"
+[0m10:14:42.231330 [debug] [ThreadPool]: On create_market_intelligence_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "connection_name": "create_market_intelligence_main"} */
+
+    
+    
+        create schema if not exists "market_intelligence"."main"
+    
+[0m10:14:42.231507 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:14:42.231772 [debug] [ThreadPool]: On create_market_intelligence_main: COMMIT
+[0m10:14:42.231881 [debug] [ThreadPool]: Using duckdb connection "create_market_intelligence_main"
+[0m10:14:42.231967 [debug] [ThreadPool]: On create_market_intelligence_main: COMMIT
+[0m10:14:42.232087 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:14:42.232188 [debug] [ThreadPool]: On create_market_intelligence_main: Close
+[0m10:14:42.232676 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_market_intelligence_main, now list_market_intelligence_main)
+[0m10:14:42.234489 [debug] [ThreadPool]: Using duckdb connection "list_market_intelligence_main"
+[0m10:14:42.234590 [debug] [ThreadPool]: On list_market_intelligence_main: BEGIN
+[0m10:14:42.234678 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:14:42.234840 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:14:42.234956 [debug] [ThreadPool]: Using duckdb connection "list_market_intelligence_main"
+[0m10:14:42.235074 [debug] [ThreadPool]: On list_market_intelligence_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "connection_name": "list_market_intelligence_main"} */
+select
+      'market_intelligence' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'market_intelligence'
+  
+[0m10:14:42.237239 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m10:14:42.237687 [debug] [ThreadPool]: On list_market_intelligence_main: ROLLBACK
+[0m10:14:42.238181 [debug] [ThreadPool]: Failed to rollback 'list_market_intelligence_main'
+[0m10:14:42.238277 [debug] [ThreadPool]: On list_market_intelligence_main: Close
+[0m10:14:42.238774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a675210>]}
+[0m10:14:42.238947 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:14:42.239047 [debug] [MainThread]: On master: BEGIN
+[0m10:14:42.239138 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:14:42.239296 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:14:42.239396 [debug] [MainThread]: On master: COMMIT
+[0m10:14:42.239492 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:14:42.239591 [debug] [MainThread]: On master: COMMIT
+[0m10:14:42.239720 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:14:42.239822 [debug] [MainThread]: On master: Close
+[0m10:14:42.240917 [debug] [Thread-1 (]: Began running node model.market_intelligence.stg_fred_macro
+[0m10:14:42.241069 [debug] [Thread-2 (]: Began running node model.market_intelligence.stg_yahoo_prices
+[0m10:14:42.241257 [info ] [Thread-1 (]: 1 of 6 START sql view model main.stg_fred_macro ................................ [RUN]
+[0m10:14:42.241454 [info ] [Thread-2 (]: 2 of 6 START sql view model main.stg_yahoo_prices .............................. [RUN]
+[0m10:14:42.241625 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_market_intelligence_main, now model.market_intelligence.stg_fred_macro)
+[0m10:14:42.241801 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.market_intelligence.stg_yahoo_prices'
+[0m10:14:42.241936 [debug] [Thread-1 (]: Began compiling node model.market_intelligence.stg_fred_macro
+[0m10:14:42.242062 [debug] [Thread-2 (]: Began compiling node model.market_intelligence.stg_yahoo_prices
+[0m10:14:42.244405 [debug] [Thread-1 (]: Writing injected SQL for node "model.market_intelligence.stg_fred_macro"
+[0m10:14:42.245063 [debug] [Thread-2 (]: Writing injected SQL for node "model.market_intelligence.stg_yahoo_prices"
+[0m10:14:42.245367 [debug] [Thread-1 (]: Began executing node model.market_intelligence.stg_fred_macro
+[0m10:14:42.245486 [debug] [Thread-2 (]: Began executing node model.market_intelligence.stg_yahoo_prices
+[0m10:14:42.255868 [debug] [Thread-1 (]: Writing runtime sql for node "model.market_intelligence.stg_fred_macro"
+[0m10:14:42.257777 [debug] [Thread-2 (]: Writing runtime sql for node "model.market_intelligence.stg_yahoo_prices"
+[0m10:14:42.258275 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.stg_yahoo_prices"
+[0m10:14:42.258411 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.stg_fred_macro"
+[0m10:14:42.258537 [debug] [Thread-2 (]: On model.market_intelligence.stg_yahoo_prices: BEGIN
+[0m10:14:42.258656 [debug] [Thread-1 (]: On model.market_intelligence.stg_fred_macro: BEGIN
+[0m10:14:42.258762 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:14:42.258867 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:14:42.259143 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.259271 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.259388 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.stg_yahoo_prices"
+[0m10:14:42.259504 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.stg_fred_macro"
+[0m10:14:42.259638 [debug] [Thread-2 (]: On model.market_intelligence.stg_yahoo_prices: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.stg_yahoo_prices"} */
+
+  
+  create view "market_intelligence"."main"."stg_yahoo_prices__dbt_tmp" as (
+    -- =============================================================================
+-- STAGING MODEL: stg_yahoo_prices
+-- Reads from the Silver layer CSV and presents it as a clean view in DuckDB.
+-- Staging models are the entry point into dbt — they rename columns,
+-- cast types, and do nothing else. No business logic here.
+-- =============================================================================
+
+with source as (
+
+    select * from read_csv_auto(
+        '/Users/andresmejia/Documents/market-intelligence-platform/data/silver/yahoo_finance/yahoo_finance_silver_*.csv'
+    )
+
+),
+
+renamed as (
+
+    select
+        -- Identifiers
+        ticker,
+
+        -- Dates
+        cast(date as date)          as price_date,
+
+        -- Prices
+        cast(open  as double)       as open_price,
+        cast(high  as double)       as high_price,
+        cast(low   as double)       as low_price,
+        cast(close as double)       as close_price,
+
+        -- Volume
+        cast(volume as bigint)      as volume,
+
+        -- Metadata
+        ingestion_date,
+        silver_processed_date,
+        source
+
+    from source
+
+)
+
+select * from renamed
+  );
+
+[0m10:14:42.259795 [debug] [Thread-1 (]: On model.market_intelligence.stg_fred_macro: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.stg_fred_macro"} */
+
+  
+  create view "market_intelligence"."main"."stg_fred_macro__dbt_tmp" as (
+    -- =============================================================================
+-- STAGING MODEL: stg_fred_macro
+-- Reads FRED macro Silver CSV into dbt.
+-- =============================================================================
+
+with source as (
+
+    select * from read_csv_auto(
+        '/Users/andresmejia/Documents/market-intelligence-platform/data/silver/fred_macro/fred_macro_silver_*.csv'
+    )
+
+),
+
+renamed as (
+
+    select
+        cast(date       as date)        as macro_date,
+        series_id,
+        series_name,
+        cast(value      as double)      as indicator_value,
+        ingestion_date,
+        silver_processed_date,
+        source
+
+    from source
+
+)
+
+select * from renamed
+  );
+
+[0m10:14:42.270570 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m10:14:42.273296 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.stg_fred_macro"
+[0m10:14:42.273429 [debug] [Thread-1 (]: On model.market_intelligence.stg_fred_macro: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.stg_fred_macro"} */
+alter view "market_intelligence"."main"."stg_fred_macro" rename to "stg_fred_macro__dbt_backup"
+[0m10:14:42.274513 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m10:14:42.275580 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.stg_fred_macro"
+[0m10:14:42.275707 [debug] [Thread-1 (]: On model.market_intelligence.stg_fred_macro: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.stg_fred_macro"} */
+alter view "market_intelligence"."main"."stg_fred_macro__dbt_tmp" rename to "stg_fred_macro"
+[0m10:14:42.275911 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.280053 [debug] [Thread-1 (]: On model.market_intelligence.stg_fred_macro: COMMIT
+[0m10:14:42.280204 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.stg_fred_macro"
+[0m10:14:42.280328 [debug] [Thread-1 (]: On model.market_intelligence.stg_fred_macro: COMMIT
+[0m10:14:42.281043 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m10:14:42.283217 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.stg_fred_macro"
+[0m10:14:42.283356 [debug] [Thread-1 (]: On model.market_intelligence.stg_fred_macro: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.stg_fred_macro"} */
+
+      drop view if exists "market_intelligence"."main"."stg_fred_macro__dbt_backup" cascade
+    
+[0m10:14:42.283641 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.284430 [debug] [Thread-1 (]: On model.market_intelligence.stg_fred_macro: Close
+[0m10:14:42.285206 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad5a090>]}
+[0m10:14:42.285460 [info ] [Thread-1 (]: 1 of 6 OK created sql view model main.stg_fred_macro ........................... [[32mOK[0m in 0.04s]
+[0m10:14:42.285671 [debug] [Thread-1 (]: Finished running node model.market_intelligence.stg_fred_macro
+[0m10:14:42.320666 [debug] [Thread-2 (]: SQL status: OK in 0.061 seconds
+[0m10:14:42.321950 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.stg_yahoo_prices"
+[0m10:14:42.322083 [debug] [Thread-2 (]: On model.market_intelligence.stg_yahoo_prices: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.stg_yahoo_prices"} */
+alter view "market_intelligence"."main"."stg_yahoo_prices" rename to "stg_yahoo_prices__dbt_backup"
+[0m10:14:42.322307 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.323221 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.stg_yahoo_prices"
+[0m10:14:42.323333 [debug] [Thread-2 (]: On model.market_intelligence.stg_yahoo_prices: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.stg_yahoo_prices"} */
+alter view "market_intelligence"."main"."stg_yahoo_prices__dbt_tmp" rename to "stg_yahoo_prices"
+[0m10:14:42.323513 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.323942 [debug] [Thread-2 (]: On model.market_intelligence.stg_yahoo_prices: COMMIT
+[0m10:14:42.324053 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.stg_yahoo_prices"
+[0m10:14:42.324155 [debug] [Thread-2 (]: On model.market_intelligence.stg_yahoo_prices: COMMIT
+[0m10:14:42.324462 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.325274 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.stg_yahoo_prices"
+[0m10:14:42.325391 [debug] [Thread-2 (]: On model.market_intelligence.stg_yahoo_prices: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.stg_yahoo_prices"} */
+
+      drop view if exists "market_intelligence"."main"."stg_yahoo_prices__dbt_backup" cascade
+    
+[0m10:14:42.325643 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.326116 [debug] [Thread-2 (]: On model.market_intelligence.stg_yahoo_prices: Close
+[0m10:14:42.326332 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae34650>]}
+[0m10:14:42.326604 [info ] [Thread-2 (]: 2 of 6 OK created sql view model main.stg_yahoo_prices ......................... [[32mOK[0m in 0.08s]
+[0m10:14:42.326808 [debug] [Thread-2 (]: Finished running node model.market_intelligence.stg_yahoo_prices
+[0m10:14:42.327070 [debug] [Thread-4 (]: Began running node model.market_intelligence.mrt_daily_returns
+[0m10:14:42.327288 [info ] [Thread-4 (]: 3 of 6 START sql table model main.mrt_daily_returns ............................ [RUN]
+[0m10:14:42.327474 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.market_intelligence.mrt_daily_returns'
+[0m10:14:42.327595 [debug] [Thread-4 (]: Began compiling node model.market_intelligence.mrt_daily_returns
+[0m10:14:42.328619 [debug] [Thread-4 (]: Writing injected SQL for node "model.market_intelligence.mrt_daily_returns"
+[0m10:14:42.329053 [debug] [Thread-4 (]: Began executing node model.market_intelligence.mrt_daily_returns
+[0m10:14:42.335715 [debug] [Thread-4 (]: Writing runtime sql for node "model.market_intelligence.mrt_daily_returns"
+[0m10:14:42.336169 [debug] [Thread-4 (]: Using duckdb connection "model.market_intelligence.mrt_daily_returns"
+[0m10:14:42.336298 [debug] [Thread-4 (]: On model.market_intelligence.mrt_daily_returns: BEGIN
+[0m10:14:42.336416 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:14:42.336644 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.336759 [debug] [Thread-4 (]: Using duckdb connection "model.market_intelligence.mrt_daily_returns"
+[0m10:14:42.336905 [debug] [Thread-4 (]: On model.market_intelligence.mrt_daily_returns: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_daily_returns"} */
+
+  
+    
+    
+
+    create  table
+      "market_intelligence"."main"."mrt_daily_returns__dbt_tmp"
+  
+    as (
+      -- =============================================================================
+-- MART MODEL: mrt_daily_returns
+-- Calculates daily percentage return per ticker.
+-- This is the foundation for all performance analysis in the dashboard.
+-- Formula: (today's close - yesterday's close) / yesterday's close * 100
+-- =============================================================================
+
+with prices as (
+
+    select * from "market_intelligence"."main"."stg_yahoo_prices"
+
+),
+
+with_returns as (
+
+    select
+        ticker,
+        price_date,
+        open_price,
+        high_price,
+        low_price,
+        close_price,
+        volume,
+
+        -- Previous day's close using LAG window function
+        lag(close_price) over (
+            partition by ticker
+            order by price_date
+        ) as prev_close_price,
+
+        -- Daily return %
+        round(
+            (close_price - lag(close_price) over (
+                partition by ticker order by price_date
+            )) / lag(close_price) over (
+                partition by ticker order by price_date
+            ) * 100,
+        4) as daily_return_pct
+
+    from prices
+
+)
+
+select * from with_returns
+where prev_close_price is not null
+    );
+  
+  
+[0m10:14:42.443734 [debug] [Thread-4 (]: SQL status: OK in 0.107 seconds
+[0m10:14:42.446749 [debug] [Thread-4 (]: Using duckdb connection "model.market_intelligence.mrt_daily_returns"
+[0m10:14:42.446903 [debug] [Thread-4 (]: On model.market_intelligence.mrt_daily_returns: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_daily_returns"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mrt_daily_returns'
+  
+[0m10:14:42.447243 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.447676 [debug] [Thread-4 (]: Using duckdb connection "model.market_intelligence.mrt_daily_returns"
+[0m10:14:42.447809 [debug] [Thread-4 (]: On model.market_intelligence.mrt_daily_returns: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_daily_returns"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mrt_daily_returns'
+  
+[0m10:14:42.448255 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.449378 [debug] [Thread-4 (]: Using duckdb connection "model.market_intelligence.mrt_daily_returns"
+[0m10:14:42.449500 [debug] [Thread-4 (]: On model.market_intelligence.mrt_daily_returns: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_daily_returns"} */
+alter table "market_intelligence"."main"."mrt_daily_returns" rename to "mrt_daily_returns__dbt_backup"
+[0m10:14:42.449698 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.450612 [debug] [Thread-4 (]: Using duckdb connection "model.market_intelligence.mrt_daily_returns"
+[0m10:14:42.450731 [debug] [Thread-4 (]: On model.market_intelligence.mrt_daily_returns: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_daily_returns"} */
+alter table "market_intelligence"."main"."mrt_daily_returns__dbt_tmp" rename to "mrt_daily_returns"
+[0m10:14:42.450906 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.452604 [debug] [Thread-4 (]: On model.market_intelligence.mrt_daily_returns: COMMIT
+[0m10:14:42.452743 [debug] [Thread-4 (]: Using duckdb connection "model.market_intelligence.mrt_daily_returns"
+[0m10:14:42.452854 [debug] [Thread-4 (]: On model.market_intelligence.mrt_daily_returns: COMMIT
+[0m10:14:42.453848 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m10:14:42.454687 [debug] [Thread-4 (]: Using duckdb connection "model.market_intelligence.mrt_daily_returns"
+[0m10:14:42.454803 [debug] [Thread-4 (]: On model.market_intelligence.mrt_daily_returns: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_daily_returns"} */
+
+      drop table if exists "market_intelligence"."main"."mrt_daily_returns__dbt_backup" cascade
+    
+[0m10:14:42.455054 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.455483 [debug] [Thread-4 (]: On model.market_intelligence.mrt_daily_returns: Close
+[0m10:14:42.455679 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae88b90>]}
+[0m10:14:42.455890 [info ] [Thread-4 (]: 3 of 6 OK created sql table model main.mrt_daily_returns ....................... [[32mOK[0m in 0.13s]
+[0m10:14:42.456087 [debug] [Thread-4 (]: Finished running node model.market_intelligence.mrt_daily_returns
+[0m10:14:42.456400 [debug] [Thread-1 (]: Began running node model.market_intelligence.mrt_macro_overlay
+[0m10:14:42.456539 [debug] [Thread-2 (]: Began running node model.market_intelligence.mrt_moving_averages
+[0m10:14:42.456699 [debug] [Thread-3 (]: Began running node model.market_intelligence.mrt_sector_performance
+[0m10:14:42.456896 [info ] [Thread-1 (]: 4 of 6 START sql table model main.mrt_macro_overlay ............................ [RUN]
+[0m10:14:42.457074 [info ] [Thread-2 (]: 5 of 6 START sql table model main.mrt_moving_averages .......................... [RUN]
+[0m10:14:42.457261 [info ] [Thread-3 (]: 6 of 6 START sql table model main.mrt_sector_performance ....................... [RUN]
+[0m10:14:42.457434 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.market_intelligence.stg_fred_macro, now model.market_intelligence.mrt_macro_overlay)
+[0m10:14:42.457576 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.market_intelligence.stg_yahoo_prices, now model.market_intelligence.mrt_moving_averages)
+[0m10:14:42.457752 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.market_intelligence.mrt_sector_performance'
+[0m10:14:42.457880 [debug] [Thread-1 (]: Began compiling node model.market_intelligence.mrt_macro_overlay
+[0m10:14:42.458010 [debug] [Thread-2 (]: Began compiling node model.market_intelligence.mrt_moving_averages
+[0m10:14:42.458136 [debug] [Thread-3 (]: Began compiling node model.market_intelligence.mrt_sector_performance
+[0m10:14:42.459298 [debug] [Thread-1 (]: Writing injected SQL for node "model.market_intelligence.mrt_macro_overlay"
+[0m10:14:42.460295 [debug] [Thread-2 (]: Writing injected SQL for node "model.market_intelligence.mrt_moving_averages"
+[0m10:14:42.461279 [debug] [Thread-3 (]: Writing injected SQL for node "model.market_intelligence.mrt_sector_performance"
+[0m10:14:42.461626 [debug] [Thread-1 (]: Began executing node model.market_intelligence.mrt_macro_overlay
+[0m10:14:42.461744 [debug] [Thread-2 (]: Began executing node model.market_intelligence.mrt_moving_averages
+[0m10:14:42.462999 [debug] [Thread-1 (]: Writing runtime sql for node "model.market_intelligence.mrt_macro_overlay"
+[0m10:14:42.463130 [debug] [Thread-3 (]: Began executing node model.market_intelligence.mrt_sector_performance
+[0m10:14:42.464250 [debug] [Thread-2 (]: Writing runtime sql for node "model.market_intelligence.mrt_moving_averages"
+[0m10:14:42.465365 [debug] [Thread-3 (]: Writing runtime sql for node "model.market_intelligence.mrt_sector_performance"
+[0m10:14:42.465552 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.mrt_macro_overlay"
+[0m10:14:42.465709 [debug] [Thread-1 (]: On model.market_intelligence.mrt_macro_overlay: BEGIN
+[0m10:14:42.465840 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:14:42.465975 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.mrt_moving_averages"
+[0m10:14:42.466195 [debug] [Thread-3 (]: Using duckdb connection "model.market_intelligence.mrt_sector_performance"
+[0m10:14:42.466340 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.466451 [debug] [Thread-2 (]: On model.market_intelligence.mrt_moving_averages: BEGIN
+[0m10:14:42.466578 [debug] [Thread-3 (]: On model.market_intelligence.mrt_sector_performance: BEGIN
+[0m10:14:42.466695 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.mrt_macro_overlay"
+[0m10:14:42.466805 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:14:42.466954 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:14:42.467095 [debug] [Thread-1 (]: On model.market_intelligence.mrt_macro_overlay: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_macro_overlay"} */
+
+  
+    
+    
+
+    create  table
+      "market_intelligence"."main"."mrt_macro_overlay__dbt_tmp"
+  
+    as (
+      -- =============================================================================
+-- MART MODEL: mrt_macro_overlay
+-- Joins macro indicators from FRED to daily stock prices.
+-- This lets us answer questions like:
+-- "How did tech stocks perform when the Fed raised rates?"
+-- "Is there a correlation between CPI and energy stocks?"
+--
+-- Since FRED data is monthly and stock data is daily, we use a
+-- date spine approach — each stock date gets the most recent
+-- macro reading available (forward fill).
+-- =============================================================================
+
+with prices as (
+
+    select * from "market_intelligence"."main"."mrt_daily_returns"
+
+),
+
+macro as (
+
+    select * from "market_intelligence"."main"."stg_fred_macro"
+
+),
+
+-- Pivot macro data from long format to wide format
+-- Long:  one row per indicator per date
+-- Wide:  one row per date with each indicator as its own column
+macro_pivoted as (
+
+    select
+        macro_date,
+
+        max(case when series_id = 'FEDFUNDS' then indicator_value end) as fed_funds_rate,
+        max(case when series_id = 'CPIAUCSL' then indicator_value end) as cpi,
+        max(case when series_id = 'GS10'     then indicator_value end) as treasury_yield_10y,
+        max(case when series_id = 'UNRATE'   then indicator_value end) as unemployment_rate,
+        max(case when series_id = 'GDP'      then indicator_value end) as gdp
+
+    from macro
+    group by macro_date
+
+),
+
+-- Join stock prices to most recent macro reading
+-- asof join matches each stock date to the nearest macro date
+-- that is less than or equal to the stock date
+joined as (
+
+    select
+        p.ticker,
+        p.price_date,
+        p.close_price,
+        p.daily_return_pct,
+        m.macro_date,
+        m.fed_funds_rate,
+        m.cpi,
+        m.treasury_yield_10y,
+        m.unemployment_rate,
+        m.gdp
+
+    from prices p
+    asof join macro_pivoted m
+        on p.price_date >= m.macro_date
+
+)
+
+select * from joined
+order by ticker, price_date
+    );
+  
+  
+[0m10:14:42.467315 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m10:14:42.467538 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m10:14:42.467650 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.mrt_moving_averages"
+[0m10:14:42.467769 [debug] [Thread-3 (]: Using duckdb connection "model.market_intelligence.mrt_sector_performance"
+[0m10:14:42.467926 [debug] [Thread-2 (]: On model.market_intelligence.mrt_moving_averages: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_moving_averages"} */
+
+  
+    
+    
+
+    create  table
+      "market_intelligence"."main"."mrt_moving_averages__dbt_tmp"
+  
+    as (
+      -- =============================================================================
+-- MART MODEL: mrt_moving_averages
+-- Calculates 7-day, 30-day, and 90-day moving averages per ticker.
+-- Moving averages smooth out price volatility and are one of the most
+-- commonly used indicators in financial analysis.
+-- =============================================================================
+
+with daily_returns as (
+
+    select * from "market_intelligence"."main"."mrt_daily_returns"
+
+),
+
+moving_averages as (
+
+    select
+        ticker,
+        price_date,
+        close_price,
+        daily_return_pct,
+
+        -- 7-day moving average (short term trend)
+        round(avg(close_price) over (
+            partition by ticker
+            order by price_date
+            rows between 6 preceding and current row
+        ), 4) as ma_7d,
+
+        -- 30-day moving average (medium term trend)
+        round(avg(close_price) over (
+            partition by ticker
+            order by price_date
+            rows between 29 preceding and current row
+        ), 4) as ma_30d,
+
+        -- 90-day moving average (long term trend)
+        round(avg(close_price) over (
+            partition by ticker
+            order by price_date
+            rows between 89 preceding and current row
+        ), 4) as ma_90d,
+
+        -- 30-day rolling volatility (annualized standard deviation)
+        round(stddev(daily_return_pct) over (
+            partition by ticker
+            order by price_date
+            rows between 29 preceding and current row
+        ) * sqrt(252), 4) as volatility_30d_annualized
+
+    from daily_returns
+
+)
+
+select * from moving_averages
+    );
+  
+  
+[0m10:14:42.468133 [debug] [Thread-3 (]: On model.market_intelligence.mrt_sector_performance: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_sector_performance"} */
+
+  
+    
+    
+
+    create  table
+      "market_intelligence"."main"."mrt_sector_performance__dbt_tmp"
+  
+    as (
+      -- =============================================================================
+-- MART MODEL: mrt_sector_performance
+-- Aggregates daily returns by sector so we can compare how tech performed
+-- vs finance vs healthcare etc. on any given day.
+-- This powers the sector heatmap in the dashboard.
+-- =============================================================================
+
+with daily_returns as (
+
+    select * from "market_intelligence"."main"."mrt_daily_returns"
+
+),
+
+-- Map each ticker to its sector
+-- This is a static mapping — in a production system this would come
+-- from a dimension table, but for our portfolio project we define it here
+ticker_sectors as (
+
+    select * from (values
+        ('AAPL', 'Technology'),
+        ('MSFT', 'Technology'),
+        ('NVDA', 'Technology'),
+        ('JPM',  'Financials'),
+        ('GS',   'Financials'),
+        ('BAC',  'Financials'),
+        ('JNJ',  'Healthcare'),
+        ('PFE',  'Healthcare'),
+        ('UNH',  'Healthcare'),
+        ('XOM',  'Energy'),
+        ('CVX',  'Energy'),
+        ('AMZN', 'Consumer'),
+        ('WMT',  'Consumer'),
+        ('COST', 'Consumer')
+    ) as t(ticker, sector)
+
+),
+
+joined as (
+
+    select
+        dr.price_date,
+        ts.sector,
+        dr.ticker,
+        dr.close_price,
+        dr.daily_return_pct
+
+    from daily_returns dr
+    left join ticker_sectors ts
+        on dr.ticker = ts.ticker
+
+),
+
+sector_aggregated as (
+
+    select
+        price_date,
+        sector,
+
+        -- Average return across all tickers in the sector that day
+        round(avg(daily_return_pct), 4)     as avg_daily_return_pct,
+
+        -- Best and worst performer in the sector that day
+        round(max(daily_return_pct), 4)     as max_daily_return_pct,
+        round(min(daily_return_pct), 4)     as min_daily_return_pct,
+
+        -- Number of tickers in sector
+        count(distinct ticker)              as ticker_count
+
+    from joined
+    group by price_date, sector
+
+)
+
+select * from sector_aggregated
+order by price_date desc, sector
+    );
+  
+  
+[0m10:14:42.473742 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m10:14:42.474411 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.mrt_moving_averages"
+[0m10:14:42.474593 [debug] [Thread-2 (]: On model.market_intelligence.mrt_moving_averages: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_moving_averages"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mrt_moving_averages'
+  
+[0m10:14:42.474972 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.475403 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.mrt_moving_averages"
+[0m10:14:42.475541 [debug] [Thread-2 (]: On model.market_intelligence.mrt_moving_averages: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_moving_averages"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mrt_moving_averages'
+  
+[0m10:14:42.475770 [debug] [Thread-3 (]: SQL status: OK in 0.007 seconds
+[0m10:14:42.475886 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.476194 [debug] [Thread-3 (]: Using duckdb connection "model.market_intelligence.mrt_sector_performance"
+[0m10:14:42.478106 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.mrt_moving_averages"
+[0m10:14:42.478235 [debug] [Thread-3 (]: On model.market_intelligence.mrt_sector_performance: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_sector_performance"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mrt_sector_performance'
+  
+[0m10:14:42.478397 [debug] [Thread-2 (]: On model.market_intelligence.mrt_moving_averages: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_moving_averages"} */
+alter table "market_intelligence"."main"."mrt_moving_averages" rename to "mrt_moving_averages__dbt_backup"
+[0m10:14:42.478661 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.478791 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.479167 [debug] [Thread-3 (]: Using duckdb connection "model.market_intelligence.mrt_sector_performance"
+[0m10:14:42.480243 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.mrt_moving_averages"
+[0m10:14:42.480387 [debug] [Thread-3 (]: On model.market_intelligence.mrt_sector_performance: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_sector_performance"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mrt_sector_performance'
+  
+[0m10:14:42.480553 [debug] [Thread-2 (]: On model.market_intelligence.mrt_moving_averages: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_moving_averages"} */
+alter table "market_intelligence"."main"."mrt_moving_averages__dbt_tmp" rename to "mrt_moving_averages"
+[0m10:14:42.480859 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.481493 [debug] [Thread-2 (]: On model.market_intelligence.mrt_moving_averages: COMMIT
+[0m10:14:42.481632 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.mrt_moving_averages"
+[0m10:14:42.481746 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m10:14:42.481870 [debug] [Thread-2 (]: On model.market_intelligence.mrt_moving_averages: COMMIT
+[0m10:14:42.482969 [debug] [Thread-3 (]: Using duckdb connection "model.market_intelligence.mrt_sector_performance"
+[0m10:14:42.483118 [debug] [Thread-3 (]: On model.market_intelligence.mrt_sector_performance: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_sector_performance"} */
+alter table "market_intelligence"."main"."mrt_sector_performance" rename to "mrt_sector_performance__dbt_backup"
+[0m10:14:42.483319 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.484362 [debug] [Thread-3 (]: Using duckdb connection "model.market_intelligence.mrt_sector_performance"
+[0m10:14:42.484490 [debug] [Thread-3 (]: On model.market_intelligence.mrt_sector_performance: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_sector_performance"} */
+alter table "market_intelligence"."main"."mrt_sector_performance__dbt_tmp" rename to "mrt_sector_performance"
+[0m10:14:42.484605 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m10:14:42.485886 [debug] [Thread-2 (]: Using duckdb connection "model.market_intelligence.mrt_moving_averages"
+[0m10:14:42.486036 [debug] [Thread-2 (]: On model.market_intelligence.mrt_moving_averages: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_moving_averages"} */
+
+      drop table if exists "market_intelligence"."main"."mrt_moving_averages__dbt_backup" cascade
+    
+[0m10:14:42.486260 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m10:14:42.486950 [debug] [Thread-3 (]: On model.market_intelligence.mrt_sector_performance: COMMIT
+[0m10:14:42.487091 [debug] [Thread-3 (]: Using duckdb connection "model.market_intelligence.mrt_sector_performance"
+[0m10:14:42.487212 [debug] [Thread-3 (]: On model.market_intelligence.mrt_sector_performance: COMMIT
+[0m10:14:42.487386 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m10:14:42.488172 [debug] [Thread-2 (]: On model.market_intelligence.mrt_moving_averages: Close
+[0m10:14:42.488311 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m10:14:42.488532 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aea3a50>]}
+[0m10:14:42.489465 [debug] [Thread-3 (]: Using duckdb connection "model.market_intelligence.mrt_sector_performance"
+[0m10:14:42.489851 [debug] [Thread-3 (]: On model.market_intelligence.mrt_sector_performance: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_sector_performance"} */
+
+      drop table if exists "market_intelligence"."main"."mrt_sector_performance__dbt_backup" cascade
+    
+[0m10:14:42.489715 [info ] [Thread-2 (]: 5 of 6 OK created sql table model main.mrt_moving_averages ..................... [[32mOK[0m in 0.03s]
+[0m10:14:42.490105 [debug] [Thread-2 (]: Finished running node model.market_intelligence.mrt_moving_averages
+[0m10:14:42.490228 [debug] [Thread-1 (]: SQL status: OK in 0.023 seconds
+[0m10:14:42.490416 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.490821 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.mrt_macro_overlay"
+[0m10:14:42.491189 [debug] [Thread-3 (]: On model.market_intelligence.mrt_sector_performance: Close
+[0m10:14:42.491329 [debug] [Thread-1 (]: On model.market_intelligence.mrt_macro_overlay: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_macro_overlay"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mrt_macro_overlay'
+  
+[0m10:14:42.491523 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae66ed0>]}
+[0m10:14:42.491824 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.492031 [info ] [Thread-3 (]: 6 of 6 OK created sql table model main.mrt_sector_performance .................. [[32mOK[0m in 0.03s]
+[0m10:14:42.492443 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.mrt_macro_overlay"
+[0m10:14:42.492611 [debug] [Thread-3 (]: Finished running node model.market_intelligence.mrt_sector_performance
+[0m10:14:42.492747 [debug] [Thread-1 (]: On model.market_intelligence.mrt_macro_overlay: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_macro_overlay"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mrt_macro_overlay'
+  
+[0m10:14:42.493045 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.494104 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.mrt_macro_overlay"
+[0m10:14:42.494239 [debug] [Thread-1 (]: On model.market_intelligence.mrt_macro_overlay: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_macro_overlay"} */
+alter table "market_intelligence"."main"."mrt_macro_overlay" rename to "mrt_macro_overlay__dbt_backup"
+[0m10:14:42.494436 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.495439 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.mrt_macro_overlay"
+[0m10:14:42.495564 [debug] [Thread-1 (]: On model.market_intelligence.mrt_macro_overlay: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_macro_overlay"} */
+alter table "market_intelligence"."main"."mrt_macro_overlay__dbt_tmp" rename to "mrt_macro_overlay"
+[0m10:14:42.495745 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.496289 [debug] [Thread-1 (]: On model.market_intelligence.mrt_macro_overlay: COMMIT
+[0m10:14:42.496416 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.mrt_macro_overlay"
+[0m10:14:42.496536 [debug] [Thread-1 (]: On model.market_intelligence.mrt_macro_overlay: COMMIT
+[0m10:14:42.497587 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m10:14:42.498370 [debug] [Thread-1 (]: Using duckdb connection "model.market_intelligence.mrt_macro_overlay"
+[0m10:14:42.498487 [debug] [Thread-1 (]: On model.market_intelligence.mrt_macro_overlay: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "market_intelligence", "target_name": "dev", "node_id": "model.market_intelligence.mrt_macro_overlay"} */
+
+      drop table if exists "market_intelligence"."main"."mrt_macro_overlay__dbt_backup" cascade
+    
+[0m10:14:42.498719 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m10:14:42.499110 [debug] [Thread-1 (]: On model.market_intelligence.mrt_macro_overlay: Close
+[0m10:14:42.499291 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9a75fe0a-ff51-4e89-85df-4fcffb0bb3af', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aea57d0>]}
+[0m10:14:42.499499 [info ] [Thread-1 (]: 4 of 6 OK created sql table model main.mrt_macro_overlay ....................... [[32mOK[0m in 0.04s]
+[0m10:14:42.499694 [debug] [Thread-1 (]: Finished running node model.market_intelligence.mrt_macro_overlay
+[0m10:14:42.500190 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:14:42.500307 [debug] [MainThread]: On master: BEGIN
+[0m10:14:42.500411 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:14:42.500574 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:14:42.500684 [debug] [MainThread]: On master: COMMIT
+[0m10:14:42.500790 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:14:42.500893 [debug] [MainThread]: On master: COMMIT
+[0m10:14:42.501034 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:14:42.501139 [debug] [MainThread]: On master: Close
+[0m10:14:42.501279 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:14:42.501383 [debug] [MainThread]: Connection 'model.market_intelligence.mrt_macro_overlay' was properly closed.
+[0m10:14:42.501482 [debug] [MainThread]: Connection 'model.market_intelligence.mrt_moving_averages' was properly closed.
+[0m10:14:42.501581 [debug] [MainThread]: Connection 'model.market_intelligence.mrt_daily_returns' was properly closed.
+[0m10:14:42.501683 [debug] [MainThread]: Connection 'model.market_intelligence.mrt_sector_performance' was properly closed.
+[0m10:14:42.501837 [info ] [MainThread]: 
+[0m10:14:42.501967 [info ] [MainThread]: Finished running 4 table models, 2 view models in 0 hours 0 minutes and 0.33 seconds (0.33s).
+[0m10:14:42.502390 [debug] [MainThread]: Command end result
+[0m10:14:42.512257 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/andresmejia/Documents/market-intelligence-platform/dbt/target/manifest.json
+[0m10:14:42.513040 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/andresmejia/Documents/market-intelligence-platform/dbt/target/semantic_manifest.json
+[0m10:14:42.515206 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/andresmejia/Documents/market-intelligence-platform/dbt/target/run_results.json
+[0m10:14:42.515315 [info ] [MainThread]: 
+[0m10:14:42.515464 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:14:42.515571 [info ] [MainThread]: 
+[0m10:14:42.515693 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m10:14:42.517635 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.66453063, "process_in_blocks": "0", "process_kernel_time": 0.199469, "process_mem_max_rss": "206667776", "process_out_blocks": "0", "process_user_time": 1.08143}
+[0m10:14:42.517810 [debug] [MainThread]: Command `dbt run` succeeded at 10:14:42.517780 after 0.66 seconds
+[0m10:14:42.517947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1010c23d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106140d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101184c10>]}
+[0m10:14:42.518079 [debug] [MainThread]: Flushing usage events
+[0m10:14:42.791159 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,96 @@
+[2026-04-06T01:43:56.844+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: market_intelligence_pipeline.ingest_yahoo_finance manual__2026-04-06T01:38:32.172266+00:00 [queued]>
+[2026-04-06T01:43:56.847+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: market_intelligence_pipeline.ingest_yahoo_finance manual__2026-04-06T01:38:32.172266+00:00 [queued]>
+[2026-04-06T01:43:56.847+0000] {taskinstance.py:2171} INFO - Starting attempt 2 of 2
+[2026-04-06T01:43:56.850+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): ingest_yahoo_finance> on 2026-04-06 01:38:32.172266+00:00
+[2026-04-06T01:43:56.852+0000] {standard_task_runner.py:60} INFO - Started process 180 to run task
+[2026-04-06T01:43:56.854+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'market_intelligence_pipeline', 'ingest_yahoo_finance', 'manual__2026-04-06T01:38:32.172266+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/***/dags/market_intelligence_dag.py', '--cfg-path', '/tmp/tmpabzgaeg3']
+[2026-04-06T01:43:56.854+0000] {standard_task_runner.py:88} INFO - Job 70: Subtask ingest_yahoo_finance
+[2026-04-06T01:43:56.870+0000] {task_command.py:423} INFO - Running <TaskInstance: market_intelligence_pipeline.ingest_yahoo_finance manual__2026-04-06T01:38:32.172266+00:00 [running]> on host 47176eb25785
+[2026-04-06T01:43:56.890+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='andres' AIRFLOW_CTX_DAG_ID='market_intelligence_pipeline' AIRFLOW_CTX_TASK_ID='ingest_yahoo_finance' AIRFLOW_CTX_EXECUTION_DATE='2026-04-06T01:38:32.172266+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-06T01:38:32.172266+00:00'
+[2026-04-06T01:43:56.891+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-04-06T01:43:56.891+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dags && python3 ingestion/ingestion_script.py']
+[2026-04-06T01:43:56.894+0000] {subprocess.py:86} INFO - Output:
+[2026-04-06T01:43:57.168+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:57,168 | INFO | ============================================================
+[2026-04-06T01:43:57.168+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:57,168 | INFO | Starting Yahoo Finance ingestion
+[2026-04-06T01:43:57.169+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:57,168 | INFO | Tickers: ['AAPL', 'MSFT', 'NVDA', 'JPM', 'GS', 'BAC', 'JNJ', 'PFE', 'UNH', 'XOM', 'CVX', 'AMZN', 'WMT', 'COST']
+[2026-04-06T01:43:57.169+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:57,168 | INFO | Period: 2y
+[2026-04-06T01:43:57.169+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:57,168 | INFO | ============================================================
+[2026-04-06T01:43:57.170+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:57,169 | INFO | Output directory ready: data/bronze/yahoo_finance
+[2026-04-06T01:43:57.170+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:57,169 | INFO | Fetching data for AAPL...
+[2026-04-06T01:43:57.170+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:57,169 | INFO | Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 13] Permission denied: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2026-04-06T01:43:57.170+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:57,169 | INFO | Failed to create CookieCache, reason: Error creating CookieCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 13] Permission denied: '/home/***/.cache/py-yfinance'. CookieCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2026-04-06T01:43:58.366+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:58,366 | ERROR | Failed to get ticker 'AAPL' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:43:59.039+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:59,039 | ERROR | AAPL: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:43:59.040+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:59,040 | WARNING | No data returned for AAPL - skipping.
+[2026-04-06T01:43:59.040+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:59,040 | INFO | Fetching data for MSFT...
+[2026-04-06T01:43:59.701+0000] {subprocess.py:93} INFO - 2026-04-06 01:43:59,700 | ERROR | Failed to get ticker 'MSFT' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:00.326+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:00,325 | ERROR | MSFT: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:00.327+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:00,325 | WARNING | No data returned for MSFT - skipping.
+[2026-04-06T01:44:00.329+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:00,325 | INFO | Fetching data for NVDA...
+[2026-04-06T01:44:00.963+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:00,963 | ERROR | Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:01.662+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:01,662 | ERROR | NVDA: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:01.662+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:01,662 | WARNING | No data returned for NVDA - skipping.
+[2026-04-06T01:44:01.663+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:01,662 | INFO | Fetching data for JPM...
+[2026-04-06T01:44:02.318+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:02,318 | ERROR | Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:02.979+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:02,979 | ERROR | JPM: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:02.980+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:02,979 | WARNING | No data returned for JPM - skipping.
+[2026-04-06T01:44:02.980+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:02,979 | INFO | Fetching data for GS...
+[2026-04-06T01:44:03.679+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:03,679 | ERROR | Failed to get ticker 'GS' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:04.407+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:04,407 | ERROR | GS: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:04.408+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:04,407 | WARNING | No data returned for GS - skipping.
+[2026-04-06T01:44:04.408+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:04,407 | INFO | Fetching data for BAC...
+[2026-04-06T01:44:05.052+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:05,052 | ERROR | Failed to get ticker 'BAC' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:05.729+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:05,729 | ERROR | BAC: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:05.729+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:05,729 | WARNING | No data returned for BAC - skipping.
+[2026-04-06T01:44:05.729+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:05,729 | INFO | Fetching data for JNJ...
+[2026-04-06T01:44:06.428+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:06,428 | ERROR | Failed to get ticker 'JNJ' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:07.092+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:07,091 | ERROR | JNJ: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:07.093+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:07,091 | WARNING | No data returned for JNJ - skipping.
+[2026-04-06T01:44:07.093+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:07,091 | INFO | Fetching data for PFE...
+[2026-04-06T01:44:07.742+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:07,742 | ERROR | Failed to get ticker 'PFE' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:08.453+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:08,452 | ERROR | PFE: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:08.453+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:08,453 | WARNING | No data returned for PFE - skipping.
+[2026-04-06T01:44:08.454+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:08,453 | INFO | Fetching data for UNH...
+[2026-04-06T01:44:09.191+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:09,191 | ERROR | Failed to get ticker 'UNH' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:09.943+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:09,943 | ERROR | UNH: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:09.943+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:09,943 | WARNING | No data returned for UNH - skipping.
+[2026-04-06T01:44:09.943+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:09,943 | INFO | Fetching data for XOM...
+[2026-04-06T01:44:10.610+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:10,610 | ERROR | Failed to get ticker 'XOM' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:11.294+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:11,294 | ERROR | XOM: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:11.295+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:11,295 | WARNING | No data returned for XOM - skipping.
+[2026-04-06T01:44:11.295+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:11,295 | INFO | Fetching data for CVX...
+[2026-04-06T01:44:11.948+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:11,947 | ERROR | Failed to get ticker 'CVX' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:12.658+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:12,657 | ERROR | CVX: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:12.658+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:12,658 | WARNING | No data returned for CVX - skipping.
+[2026-04-06T01:44:12.659+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:12,658 | INFO | Fetching data for AMZN...
+[2026-04-06T01:44:13.387+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:13,387 | ERROR | Failed to get ticker 'AMZN' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:14.045+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:14,045 | ERROR | AMZN: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:14.046+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:14,046 | WARNING | No data returned for AMZN - skipping.
+[2026-04-06T01:44:14.046+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:14,046 | INFO | Fetching data for WMT...
+[2026-04-06T01:44:14.700+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:14,700 | ERROR | Failed to get ticker 'WMT' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:15.335+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:15,335 | ERROR | WMT: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:15.335+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:15,335 | WARNING | No data returned for WMT - skipping.
+[2026-04-06T01:44:15.335+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:15,335 | INFO | Fetching data for COST...
+[2026-04-06T01:44:15.998+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:15,997 | ERROR | Failed to get ticker 'COST' reason: Expecting value: line 1 column 1 (char 0)
+[2026-04-06T01:44:16.677+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:16,677 | ERROR | COST: No price data found, symbol may be delisted (period=2y)
+[2026-04-06T01:44:16.678+0000] {subprocess.py:93} INFO - 2026-04-06 01:44:16,677 | WARNING | No data returned for COST - skipping.
+[2026-04-06T01:44:16.679+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-04-06T01:44:16.679+0000] {subprocess.py:93} INFO -   File "ingestion/ingestion_script.py", line 216, in <module>
+[2026-04-06T01:44:16.679+0000] {subprocess.py:93} INFO -     main()
+[2026-04-06T01:44:16.679+0000] {subprocess.py:93} INFO -   File "ingestion/ingestion_script.py", line 189, in main
+[2026-04-06T01:44:16.679+0000] {subprocess.py:93} INFO -     df = fetch_stock_data(TICKERS, PERIOD)
+[2026-04-06T01:44:16.679+0000] {subprocess.py:93} INFO -   File "ingestion/ingestion_script.py", line 123, in fetch_stock_data
+[2026-04-06T01:44:16.680+0000] {subprocess.py:93} INFO -     raise ValueError("No data was feteched for any ticker. Check your ticker list")
+[2026-04-06T01:44:16.680+0000] {subprocess.py:93} INFO - ValueError: No data was feteched for any ticker. Check your ticker list
+[2026-04-06T01:44:16.737+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-04-06T01:44:16.742+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-04-06T01:44:16.744+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=market_intelligence_pipeline, task_id=ingest_yahoo_finance, execution_date=20260406T013832, start_date=20260406T014356, end_date=20260406T014416
+[2026-04-06T01:44:16.749+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 70 for task ingest_yahoo_finance (Bash command failed. The command returned a non-zero exit code 1.; 180)
+[2026-04-06T01:44:16.752+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-06T01:44:16.759+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

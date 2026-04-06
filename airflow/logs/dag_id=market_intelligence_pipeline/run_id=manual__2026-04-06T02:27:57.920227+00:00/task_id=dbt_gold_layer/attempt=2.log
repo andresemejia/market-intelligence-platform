@@ -1,0 +1,25 @@
+[2026-04-06T02:33:02.855+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: market_intelligence_pipeline.dbt_gold_layer manual__2026-04-06T02:27:57.920227+00:00 [queued]>
+[2026-04-06T02:33:02.858+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: market_intelligence_pipeline.dbt_gold_layer manual__2026-04-06T02:27:57.920227+00:00 [queued]>
+[2026-04-06T02:33:02.858+0000] {taskinstance.py:2171} INFO - Starting attempt 2 of 2
+[2026-04-06T02:33:02.862+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): dbt_gold_layer> on 2026-04-06 02:27:57.920227+00:00
+[2026-04-06T02:33:02.863+0000] {standard_task_runner.py:60} INFO - Started process 480 to run task
+[2026-04-06T02:33:02.865+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'market_intelligence_pipeline', 'dbt_gold_layer', 'manual__2026-04-06T02:27:57.920227+00:00', '--job-id', '86', '--raw', '--subdir', 'DAGS_FOLDER/***/dags/market_intelligence_dag.py', '--cfg-path', '/tmp/tmpb_r7ds96']
+[2026-04-06T02:33:02.865+0000] {standard_task_runner.py:88} INFO - Job 86: Subtask dbt_gold_layer
+[2026-04-06T02:33:02.880+0000] {task_command.py:423} INFO - Running <TaskInstance: market_intelligence_pipeline.dbt_gold_layer manual__2026-04-06T02:27:57.920227+00:00 [running]> on host 2232e66fe841
+[2026-04-06T02:33:02.902+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='andres' AIRFLOW_CTX_DAG_ID='market_intelligence_pipeline' AIRFLOW_CTX_TASK_ID='dbt_gold_layer' AIRFLOW_CTX_EXECUTION_DATE='2026-04-06T02:27:57.920227+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-06T02:27:57.920227+00:00'
+[2026-04-06T02:33:02.903+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-04-06T02:33:02.903+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/dags/dbt && dbt run --project-dir /opt/***/dags/dbt --profiles-dir /root/.dbt']
+[2026-04-06T02:33:02.906+0000] {subprocess.py:86} INFO - Output:
+[2026-04-06T02:33:02.907+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 1: dbt: command not found
+[2026-04-06T02:33:02.907+0000] {subprocess.py:97} INFO - Command exited with return code 127
+[2026-04-06T02:33:02.911+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2026-04-06T02:33:02.912+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=market_intelligence_pipeline, task_id=dbt_gold_layer, execution_date=20260406T022757, start_date=20260406T023302, end_date=20260406T023302
+[2026-04-06T02:33:02.916+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 86 for task dbt_gold_layer (Bash command failed. The command returned a non-zero exit code 127.; 480)
+[2026-04-06T02:33:02.920+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-06T02:33:02.928+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

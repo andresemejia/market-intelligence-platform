@@ -9,6 +9,7 @@ import pandas as pd
 import os
 import logging
 from datetime import datetime
+from typing import Tuple
 
 # =============================================================================
 # SECTION 2: LOGGING SETUP
@@ -93,7 +94,7 @@ def create_output_dirs():
 #            → Route to quarantine table, don't silently drop
 # =============================================================================
 
-def transform_yahoo(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+def transform_yahoo(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
     Cleans and validates Yahoo Finance Bronze data.
     Returns a tuple of (clean_df, quarantine_df).
@@ -182,7 +183,7 @@ def transform_yahoo(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
 # - Deduplicate on series_id + date
 # =============================================================================
 
-def transform_fred(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+def transform_fred(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
     Cleans and validates FRED macro Bronze data.
     Returns a tuple of (clean_df, quarantine_df).
